@@ -1,0 +1,6 @@
+#ifndef BITMAPS_H_INCLUDED
+#define BITMAPS_H_INCLUDED
+
+
+
+#endif // BITMAPS_H_INCLUDED
