@@ -1,1 +1,37 @@
+//!MAIN INCLUDES
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+#include <windows.h>
+#include <allegro5/allegro5.h>
+#include <allegro5/allegro_acodec.h>
+#include <allegro5/allegro_audio.h>
+#include <allegro5/allegro_color.h>
+#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_image.h>
+#include <allegro5/allegro_native_dialog.h>
+#include <allegro5/allegro_primitives.h>
+#include <allegro5/allegro_ttf.h>
+#include <allegro5/allegro_video.h>
 
+using namespace std;
+
+//!OTHER FILES
+#include "colors.h"
+#include "globals.h"
+
+//Main Menu
+#include "exitgame.h"
+#include "gameloop.h"
+#include "mainmenu.h"
+
+//!CORE
+int main()
+{
+    #include "init.h" //Loading module
+
+    //DEBUG
+    ExitGame();
+
+    return 1;
+}

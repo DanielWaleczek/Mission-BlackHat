@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1488389540 source:a:\mission-blackhat\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	<windows.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_color.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_video.h>
+	"colors.h"
+	"globals.h"
+	"exitgame.h"
+	"gameloop.h"
+	"mainmenu.h"
+	"init.h"
+
+1488387423 a:\mission-blackhat\init\allegro.h
+
+1486368274 a:\mission-blackhat\init\fonts.h
+
+1488388884 a:\mission-blackhat\init\display.h
+
+1486368204 a:\mission-blackhat\init\audio.h
+
+1486368205 a:\mission-blackhat\init\bitmaps.h
+
+1486368273 a:\mission-blackhat\init\iodevices.h
+
+1486368274 a:\mission-blackhat\init\timers.h
+
+1488386518 a:\mission-blackhat\colors.h
+
+1488388719 a:\mission-blackhat\globals.h
+
+1488390125 a:\mission-blackhat\exitgame.h
+
+1488366897 a:\mission-blackhat\gameloop.h
+
+1488389338 a:\mission-blackhat\mainmenu.h
+
+1488388395 a:\mission-blackhat\init.h
+	"init/allegro.h"
+	"init/fonts.h"
+	"init/display.h"
+	"init/audio.h"
+	"init/bitmaps.h"
+	"init/iodevices.h"
+	"init/timers.h"
+
