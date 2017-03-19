@@ -17,5 +17,6 @@ if(!al_init_ttf_addon())
     ExitGame("Failed to initialize ttf_addon!");
 if(!al_init_video_addon())
     ExitGame("Failed to initialize video_addon!");
-
+if(!al_init_primitives_addon())
+    ExitGame("Failed to initialize primitives_addon!");
 #endif // ALLEGRO_H_INCLUDED

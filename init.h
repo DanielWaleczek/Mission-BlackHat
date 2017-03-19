@@ -5,22 +5,22 @@
 cout<<"\nInitializing Allegro5...";
 #include "init/allegro.h"
 
-//cout<<"\nLoading fonts...";
+cout<<"\nLoading fonts...";
 #include "init/fonts.h"
 
-//cout<<"\nInitializing display...";
+cout<<"\nInitializing display...";
 #include "init/display.h"
 
-//cout<<"\nInitializing and loading audio...";
+cout<<"\nInitializing and loading audio...";
 #include "init/audio.h"
 
-//cout<<"\nLoading bitmaps...";
+cout<<"\nLoading bitmaps...";
 #include "init/bitmaps.h"
 
-//cout<<"\nLoading I/O devices...";
+cout<<"\nLoading I/O devices...";
 #include "init/iodevices.h"
 
-//cout<<"\nCreating timers...";
+cout<<"\nCreating timers...";
 #include "init/timers.h"
 
 

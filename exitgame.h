@@ -7,12 +7,30 @@ int ExitGame(string ErrorName="")
     {
         cmdRed cout<<endl<<endl<<ErrorName<<"\n  Failed to start the game! Shutting down..."; cmdGray
     }
+    cmdWhite cout<<"\nShutting down the game..."; cmdGray
+
+    //!Uninstalling input devices...
+    cout<<"\nUninstalling input devices...";
+    if(JoystickInstalled)
+        al_uninstall_joystick();
+    al_uninstall_mouse();
+    al_uninstall_keyboard();
+
+    al_destroy_bitmap(bitmap_player);
+
+    //!Destroying fonts...
+    cout<<"\nDestroying fonts...";
+    al_destroy_font(font_courier_new16);
+    al_destroy_font(font_courier_new32);
+    al_destroy_font(font_courier_regular16);
+    al_destroy_font(font_courier_regular32);
 
     //!Destroying displays...
+    cout<<"\nDestroying display...";
     al_destroy_display(display);
 
     //!Shutting down Allegro5
-    cout<<endl<<endl; cmdWhite cout<<"Shutting down Mission: BlackHat"; cmdGray
+    //cout<<endl<<endl; cmdWhite cout<<"Shutting down Mission: BlackHat..."; cmdGray
     /*cout<<"\n Shutting down video_addon...";
     al_shutdown_video_addon();
     cout<<"\n Shutting down ttf_addon...";
@@ -26,7 +44,7 @@ int ExitGame(string ErrorName="")
     cout<<"\n Uninstalling audio...";
     al_uninstall_audio();*/
 
-    cout<<"\n Shutting down game core...";
+    cout<<"\nShutting down game core...";
     al_uninstall_system();
 
 

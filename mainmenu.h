@@ -4,15 +4,7 @@
 
 int CreateMainMenu()
 {
-    al_clear_to_color(rgbBlue);
-    al_flip_display();
-    al_rest(2);
-    al_clear_to_color(rgbGreen);
-    al_flip_display();
-    al_rest(2);
-    al_clear_to_color(rgbRed);
-    al_flip_display();
-    al_rest(2);
+
 
     return 0;
 }
@@ -25,6 +17,7 @@ int MainMenu()
 
     //if mouse.click == x1 y1 x2 y2
         //NewGame();
+        GameLoop();
     //else if mouse.click == x1 y1 x2 y2
         //LoadGame();
     //else if mouse.click == x1 y1 x2 y2

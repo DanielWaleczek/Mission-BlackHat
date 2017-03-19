@@ -20,6 +20,9 @@ using namespace std;
 #include "colors.h"
 #include "globals.h"
 
+//Game loop
+#include "gameloop.h"
+
 //Main Menu
 #include "exitgame.h"
 #include "gameloop.h"
@@ -28,7 +31,7 @@ using namespace std;
 //!CORE
 int main()
 {
-    #include "init.h" //Loading module
+    #include "init.h"  //Loading module
 
     //DEBUG
     ExitGame();
