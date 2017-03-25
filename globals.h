@@ -30,7 +30,6 @@ const float FPS             = 30;//Screen update per seconds
 const float AnimFPS         = 10;//Animation update per seconds
 
 //CAMERA VARIABLES
-float CameraPosition[2]     = {0, 0};//Camera position. [0] - X, [1] - Y
 float OldCameraPosition     = 0;//Old camera position.
 float CameraScale           = 1.0;//Camera approximation (1.0 is normal and max approximation)
 
@@ -48,7 +47,7 @@ bool Debug                  = 1;
 //PLAYERS
 string Player1Name          = "";
 string Player2Name          = "";
-string Player1CharacterName = "";
+string Player1CharacterName = "data/player.png";
 string Player2CharacterName = "";
 
 ////////////////////
@@ -67,7 +66,10 @@ float MusicVolume           = 0.5;
 //////ALLEGRO 5/////
 ////////////////////
 //BITMAPS
+ALLEGRO_BITMAP *bitmap_ally;
 ALLEGRO_BITMAP *bitmap_player;
+ALLEGRO_BITMAP *bitmap_enemy;
+ALLEGRO_BITMAP *bitmap_temp;
 
 //SPRITES
 //!ALLEGRO_BITMAP *anim_walk[10];
@@ -107,6 +109,8 @@ ALLEGRO_MOUSE_STATE mouse_state;
 ALLEGRO_MIXER *mixer_sounds;//Mixer for Sounds
 ALLEGRO_MIXER *mixer_gui;
 ALLEGRO_MIXER *mixer_music;//Mixer for Music
+
+ALLEGRO_TRANSFORM camera;
 
 //VOICES
 //A voice represents an audio device on the system, which may be a real device, or an abstract device provided by the operating system.

@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1488798333 source:a:\mission-blackhat\main.cpp
+1490346464 source:a:\mission-blackhat\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
+	<sstream>
 	<windows.h>
 	<allegro5/allegro5.h>
 	<allegro5/allegro_acodec.h>
@@ -14,23 +15,24 @@
 	<allegro5/allegro_primitives.h>
 	<allegro5/allegro_ttf.h>
 	<allegro5/allegro_video.h>
-	"colors.h"
 	"globals.h"
+	"classes.h"
+	"colors.h"
 	"gameloop.h"
 	"exitgame.h"
 	"gameloop.h"
 	"mainmenu.h"
 	"init.h"
 
-1489923562 a:\mission-blackhat\init\allegro.h
+1490289340 a:\mission-blackhat\init\allegro.h
 
 1488446741 a:\mission-blackhat\init\fonts.h
 
-1488445430 a:\mission-blackhat\init\display.h
+1490371033 a:\mission-blackhat\init\display.h
 
 1486368204 a:\mission-blackhat\init\audio.h
 
-1489485704 a:\mission-blackhat\init\bitmaps.h
+1490290533 a:\mission-blackhat\init\bitmaps.h
 
 1488439580 a:\mission-blackhat\init\iodevices.h
 
@@ -38,19 +40,21 @@
 
 1488386518 a:\mission-blackhat\colors.h
 
-1489485674 a:\mission-blackhat\globals.h
+1490359268 a:\mission-blackhat\globals.h
 
 1489485727 a:\mission-blackhat\exitgame.h
 
-1489926908 a:\mission-blackhat\gameloop.h
-	"classes.h"
+1490372175 a:\mission-blackhat\gameloop.h
+	"gameloop/allycontroll.h"
+	"gameloop/bulletcontroll.h"
+	"gameloop/playercontroll.h"
 	"classescreator.h"
 	"gameloop/keyboard.h"
 	"gameloop/drawing.h"
 
 1488798919 a:\mission-blackhat\mainmenu.h
 
-1488438379 a:\mission-blackhat\init.h
+1490341019 a:\mission-blackhat\init.h
 	"init/allegro.h"
 	"init/fonts.h"
 	"init/display.h"
@@ -59,11 +63,17 @@
 	"init/iodevices.h"
 	"init/timers.h"
 
-1489923683 a:\mission-blackhat\gameloop\drawing.h
+1490290567 a:\mission-blackhat\gameloop\drawing.h
 
-1489485312 a:\mission-blackhat\classes.h
+1490364687 a:\mission-blackhat\classes.h
 
-1489485993 a:\mission-blackhat\classescreator.h
+1490363850 a:\mission-blackhat\classescreator.h
 
-1489927203 a:\mission-blackhat\gameloop\keyboard.h
+1490363879 a:\mission-blackhat\gameloop\keyboard.h
+
+1490362545 a:\mission-blackhat\gameloop\allycontroll.h
+
+1490370797 a:\mission-blackhat\gameloop\playercontroll.h
+
+1490372596 a:\mission-blackhat\gameloop\bulletcontroll.h
 

@@ -7,14 +7,39 @@ if(event.timer.source == timer_timer)
 
     if(al_key_down(&keyboard_state, ALLEGRO_KEY_ESCAPE))
         Exit=true;
-    else if(al_key_down(&keyboard_state, ALLEGRO_KEY_W))
+    /*else if(al_key_down(&keyboard_state, ALLEGRO_KEY_W) && al_key_down(&keyboard_state, ALLEGRO_KEY_A))
+    {
         player1.y-=player1.speed;
-    else if(al_key_down(&keyboard_state, ALLEGRO_KEY_A))
         player1.x-=player1.speed;
-    else if(al_key_down(&keyboard_state, ALLEGRO_KEY_S))
-        player1.y+=player1.speed;
-    else if(al_key_down(&keyboard_state, ALLEGRO_KEY_D))
+    }
+    else if(al_key_down(&keyboard_state, ALLEGRO_KEY_W) && al_key_down(&keyboard_state, ALLEGRO_KEY_D))
+    {
+        player1.y-=player1.speed;
         player1.x+=player1.speed;
+    }
+    else if(al_key_down(&keyboard_state, ALLEGRO_KEY_S) && al_key_down(&keyboard_state, ALLEGRO_KEY_A))
+    {
+        player1.y+=player1.speed;
+        player1.x-=player1.speed;
+    }
+    else if(al_key_down(&keyboard_state, ALLEGRO_KEY_S) && al_key_down(&keyboard_state, ALLEGRO_KEY_D))
+    {
+        player1.y+=player1.speed;
+        player1.x+=player1.speed;
+    }*/
+
+    if(al_key_down(&keyboard_state, ALLEGRO_KEY_W))
+        player1.y-=player1.speed;
+    if(al_key_down(&keyboard_state, ALLEGRO_KEY_A))
+        player1.x-=player1.speed;
+    if(al_key_down(&keyboard_state, ALLEGRO_KEY_S))
+        player1.y+=player1.speed;
+    if(al_key_down(&keyboard_state, ALLEGRO_KEY_D))
+        player1.x+=player1.speed;
+    if(al_key_down(&keyboard_state, ALLEGRO_KEY_F))
+        ally.following = !ally.following;
+    if(al_key_down(&keyboard_state, ALLEGRO_KEY_ENTER))
+        player1.shot=true;
 }
 
 #endif // KEYBOARD_H_INCLUDED

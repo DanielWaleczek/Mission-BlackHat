@@ -24,6 +24,4 @@ cout<<"\nCreating timers...";
 #include "init/timers.h"
 
 
-MainMenu();
-
 #endif // INIT_H_INCLUDED

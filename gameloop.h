@@ -1,16 +1,16 @@
 #ifndef GAMELOOP_H_INCLUDED
 #define GAMELOOP_H_INCLUDED
 //Here will be main game loop
-#include "classes.h"
-
+#include "gameloop/allycontroll.h"
+#include "gameloop/bulletcontroll.h"
+#include "gameloop/playercontroll.h"
 
 void GameLoop()
 {
+    #include "classescreator.h"
     bool draw=1, Exit=0;
     al_clear_to_color(rgbBlack);
     al_flip_display();
-
-    #include "classescreator.h"
 
     al_start_timer(timer_timer);
     al_start_timer(timer_animtimer);
@@ -22,16 +22,23 @@ void GameLoop()
             switch(event.type)
             {
                 case ALLEGRO_EVENT_TIMER:
+                    MouseX = event.mouse.x; MouseY = event.mouse.y;
                     //!KEYBOARD KEYS
                     #include "gameloop/keyboard.h"
                     break;
             }
+            allycontroll(&ally, &player1);
+            playercontroll(&player1);
+            bulletcontroll(Bullet0);
             draw=1;
         }//-!while(al_get_next_event())
         if(draw)
         {
             #include "gameloop/drawing.h"
         }
+
+        //STOP TRIGGER - SHOTING
+        player1.shot=0;
     }
 }
 #endif // GAMELOOP_H_INCLUDED

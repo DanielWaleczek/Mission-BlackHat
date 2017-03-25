@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
+#include <sstream>
 #include <windows.h>
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_acodec.h>
@@ -17,8 +18,9 @@
 using namespace std;
 
 //!OTHER FILES
-#include "colors.h"
 #include "globals.h"
+#include "classes.h"
+#include "colors.h"
 
 //Game loop
 #include "gameloop.h"
@@ -32,6 +34,9 @@ using namespace std;
 int main()
 {
     #include "init.h"  //Loading module
+
+
+    MainMenu();
 
     //DEBUG
     ExitGame();
