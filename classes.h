@@ -5,11 +5,14 @@ class Player {
     public:
     float x;
     float y;
+    float angle;
     float speed;
     float CameraPosition[2];
     string name;
     string character;
     bool shot;
+    float playermodelWidth;
+    float playermodelHeight;
 };
 
 class character {

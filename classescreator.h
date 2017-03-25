@@ -9,9 +9,12 @@
     player1.speed       = 5.0;
     player1.x           = 255.0;
     player1.y           = 255.0;
+    player1.angle       = 0;
     player1.CameraPosition[0] = player1.x;
     player1.CameraPosition[1] = player1.y;
     player1.shot = false;
+    player1.playermodelWidth = al_get_bitmap_width(bitmap_player);
+    player1.playermodelHeight = al_get_bitmap_height(bitmap_player);
 
     //!PLAYER2
     if(Multiplayer)

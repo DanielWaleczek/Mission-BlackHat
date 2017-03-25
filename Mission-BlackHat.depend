@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1490346464 source:a:\mission-blackhat\main.cpp
+1490444507 source:a:\mission-blackhat\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
+	<math.h>
 	<sstream>
 	<windows.h>
 	<allegro5/allegro5.h>
@@ -32,7 +33,7 @@
 
 1486368204 a:\mission-blackhat\init\audio.h
 
-1490290533 a:\mission-blackhat\init\bitmaps.h
+1490444984 a:\mission-blackhat\init\bitmaps.h
 
 1488439580 a:\mission-blackhat\init\iodevices.h
 
@@ -44,7 +45,7 @@
 
 1489485727 a:\mission-blackhat\exitgame.h
 
-1490372175 a:\mission-blackhat\gameloop.h
+1490446001 a:\mission-blackhat\gameloop.h
 	"gameloop/allycontroll.h"
 	"gameloop/bulletcontroll.h"
 	"gameloop/playercontroll.h"
@@ -63,17 +64,17 @@
 	"init/iodevices.h"
 	"init/timers.h"
 
-1490290567 a:\mission-blackhat\gameloop\drawing.h
+1490446090 a:\mission-blackhat\gameloop\drawing.h
 
-1490364687 a:\mission-blackhat\classes.h
+1490444799 a:\mission-blackhat\classes.h
 
-1490363850 a:\mission-blackhat\classescreator.h
+1490444992 a:\mission-blackhat\classescreator.h
 
 1490363879 a:\mission-blackhat\gameloop\keyboard.h
 
 1490362545 a:\mission-blackhat\gameloop\allycontroll.h
 
-1490370797 a:\mission-blackhat\gameloop\playercontroll.h
+1490446933 a:\mission-blackhat\gameloop\playercontroll.h
 
-1490372596 a:\mission-blackhat\gameloop\bulletcontroll.h
+1490387322 a:\mission-blackhat\gameloop\bulletcontroll.h
 

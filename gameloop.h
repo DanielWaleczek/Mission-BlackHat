@@ -22,14 +22,17 @@ void GameLoop()
             switch(event.type)
             {
                 case ALLEGRO_EVENT_TIMER:
-                    MouseX = event.mouse.x; MouseY = event.mouse.y;
+                    //!MOUSE
+                    al_get_mouse_state(&mouse_state);
+                    MouseX = mouse_state.x; MouseY = mouse_state.y;
                     //!KEYBOARD KEYS
                     #include "gameloop/keyboard.h"
                     break;
             }
             allycontroll(&ally, &player1);
             playercontroll(&player1);
-            bulletcontroll(Bullet0);
+            //!VIP
+            //bulletcontroll(Bullet0);
             draw=1;
         }//-!while(al_get_next_event())
         if(draw)

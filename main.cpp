@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
+#include <math.h>
 #include <sstream>
 #include <windows.h>
 #include <allegro5/allegro5.h>
