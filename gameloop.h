@@ -31,6 +31,7 @@ void GameLoop()
             }
             allycontroll(&ally, &player1);
             playercontroll(&player1);
+
             //!VIP
             //bulletcontroll(Bullet0);
             draw=1;

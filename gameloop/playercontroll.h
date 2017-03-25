@@ -16,10 +16,9 @@ void playercontroll(Player *PlayerTemp)
     }
 
     //!PLAYER ANGLE UPDATE
-    PlayerTemp->angle = atan(MouseX+ MouseY);
-    cout<<"Angle: "<<PlayerTemp->angle<<endl;
-    //PlayerTemp->angle = PlayerTemp->angle * 180 / M_PI;
-    cout<<"AngleR: "<<PlayerTemp->angle<<endl;
+    PlayerTemp->angle = atan2(ScreenHeight - MouseY, ScreenWidth - MouseX);
+    PlayerTemp->angle = PlayerTemp->angle * 90 / M_PI;
+
 
 }
 
