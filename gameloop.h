@@ -33,7 +33,7 @@ void GameLoop()
             playercontroll(&player1);
 
             //!VIP
-            //bulletcontroll(Bullet0);
+            bulletcontroll(&player1, bullet1);
             draw=1;
         }//-!while(al_get_next_event())
         if(draw)

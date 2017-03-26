@@ -44,4 +44,5 @@
     ally.x = 543;
     ally.y = 312;
 
+    bullet *bullet1;
 #endif // CLASSESCREATOR_H_INCLUDED

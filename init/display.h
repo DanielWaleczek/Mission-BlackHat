@@ -1,7 +1,7 @@
 #ifndef DISPLAY_H_INCLUDED
 #define DISPLAY_H_INCLUDED
 
-al_set_new_display_flags(ALLEGRO_WINDOWED);
+al_set_new_display_flags(ALLEGRO_FULLSCREEN);
 al_get_display_mode(al_get_num_display_modes() - 1, &disp_data);
 
 ScreenWidth = disp_data.width;

@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1490444507 source:a:\mission-blackhat\main.cpp
+1490517094 source:a:\mission-blackhat\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
 	<math.h>
 	<sstream>
+	<vector>
 	<windows.h>
 	<allegro5/allegro5.h>
 	<allegro5/allegro_acodec.h>
@@ -25,27 +26,27 @@
 	"mainmenu.h"
 	"init.h"
 
-1490289340 a:\mission-blackhat\init\allegro.h
+1490292940 a:\mission-blackhat\init\allegro.h
 
-1488446741 a:\mission-blackhat\init\fonts.h
+1488450341 a:\mission-blackhat\init\fonts.h
 
-1490453445 a:\mission-blackhat\init\display.h
+1490524179 a:\mission-blackhat\init\display.h
 
-1486368204 a:\mission-blackhat\init\audio.h
+1486371804 a:\mission-blackhat\init\audio.h
 
-1490444984 a:\mission-blackhat\init\bitmaps.h
+1490524652 a:\mission-blackhat\init\bitmaps.h
 
-1488439580 a:\mission-blackhat\init\iodevices.h
+1488443180 a:\mission-blackhat\init\iodevices.h
 
-1488439496 a:\mission-blackhat\init\timers.h
+1488443096 a:\mission-blackhat\init\timers.h
 
-1488386518 a:\mission-blackhat\colors.h
+1488390118 a:\mission-blackhat\colors.h
 
-1490359268 a:\mission-blackhat\globals.h
+1490362868 a:\mission-blackhat\globals.h
 
-1489485727 a:\mission-blackhat\exitgame.h
+1489489327 a:\mission-blackhat\exitgame.h
 
-1490465430 a:\mission-blackhat\gameloop.h
+1490525704 a:\mission-blackhat\gameloop.h
 	"gameloop/allycontroll.h"
 	"gameloop/bulletcontroll.h"
 	"gameloop/playercontroll.h"
@@ -53,9 +54,9 @@
 	"gameloop/keyboard.h"
 	"gameloop/drawing.h"
 
-1488798919 a:\mission-blackhat\mainmenu.h
+1488802519 a:\mission-blackhat\mainmenu.h
 
-1490341019 a:\mission-blackhat\init.h
+1490344619 a:\mission-blackhat\init.h
 	"init/allegro.h"
 	"init/fonts.h"
 	"init/display.h"
@@ -64,17 +65,17 @@
 	"init/iodevices.h"
 	"init/timers.h"
 
-1490465723 a:\mission-blackhat\gameloop\drawing.h
+1490525777 a:\mission-blackhat\gameloop\drawing.h
 
-1490444799 a:\mission-blackhat\classes.h
+1490526152 a:\mission-blackhat\classes.h
 
-1490444992 a:\mission-blackhat\classescreator.h
+1490525393 a:\mission-blackhat\classescreator.h
 
-1490363879 a:\mission-blackhat\gameloop\keyboard.h
+1490526152 a:\mission-blackhat\gameloop\keyboard.h
 
-1490362545 a:\mission-blackhat\gameloop\allycontroll.h
+1490366145 a:\mission-blackhat\gameloop\allycontroll.h
 
-1490465540 a:\mission-blackhat\gameloop\playercontroll.h
+1490525432 a:\mission-blackhat\gameloop\playercontroll.h
 
-1490446946 a:\mission-blackhat\gameloop\bulletcontroll.h
+1490526242 a:\mission-blackhat\gameloop\bulletcontroll.h
 

@@ -38,7 +38,7 @@ if(event.timer.source == timer_timer)
         player1.x+=player1.speed;
     if(al_key_down(&keyboard_state, ALLEGRO_KEY_F))
         ally.following = !ally.following;
-    if(al_key_down(&keyboard_state, ALLEGRO_KEY_ENTER))
+    if(al_key_down(&keyboard_state, ALLEGRO_KEY_SPACE))
         player1.shot=true;
 }
 

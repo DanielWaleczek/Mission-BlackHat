@@ -6,7 +6,7 @@ class Player {
     float x;
     float y;
     float angle;
-    float speed;
+    double speed;
     float CameraPosition[2];
     string name;
     string character;
@@ -30,9 +30,10 @@ class bullet {
 public:
     float x;
     float y;
-    float speed;
+    float speed=0 ;
+    float tx;
+    float ty;
     string name;
-    string target;
 
 };
 #endif // CLASSES_H_INCLUDED

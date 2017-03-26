@@ -4,6 +4,7 @@
 #include <string>
 #include <math.h>
 #include <sstream>
+#include <vector>
 #include <windows.h>
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_acodec.h>
