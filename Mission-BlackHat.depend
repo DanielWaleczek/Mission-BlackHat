@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1490517094 source:a:\mission-blackhat\main.cpp
+1491459318 source:a:\mission-blackhat\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
@@ -15,6 +15,7 @@
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_native_dialog.h>
 	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_tiled.h>
 	<allegro5/allegro_ttf.h>
 	<allegro5/allegro_video.h>
 	"globals.h"
@@ -26,7 +27,7 @@
 	"mainmenu.h"
 	"init.h"
 
-1490292940 a:\mission-blackhat\init\allegro.h
+1491459463 a:\mission-blackhat\init\allegro.h
 
 1488450341 a:\mission-blackhat\init\fonts.h
 
@@ -42,14 +43,15 @@
 
 1488390118 a:\mission-blackhat\colors.h
 
-1490362868 a:\mission-blackhat\globals.h
+1491459749 a:\mission-blackhat\globals.h
 
 1489489327 a:\mission-blackhat\exitgame.h
 
-1490525704 a:\mission-blackhat\gameloop.h
+1491459771 a:\mission-blackhat\gameloop.h
 	"gameloop/allycontroll.h"
 	"gameloop/bulletcontroll.h"
 	"gameloop/playercontroll.h"
+	"gameloop/mapcontroll.h"
 	"classescreator.h"
 	"gameloop/keyboard.h"
 	"gameloop/drawing.h"
@@ -65,11 +67,11 @@
 	"init/iodevices.h"
 	"init/timers.h"
 
-1490525777 a:\mission-blackhat\gameloop\drawing.h
+1491459825 a:\mission-blackhat\gameloop\drawing.h
 
-1490526152 a:\mission-blackhat\classes.h
+1490688625 a:\mission-blackhat\classes.h
 
-1490525393 a:\mission-blackhat\classescreator.h
+1491459825 a:\mission-blackhat\classescreator.h
 
 1490526152 a:\mission-blackhat\gameloop\keyboard.h
 
@@ -77,5 +79,7 @@
 
 1490525432 a:\mission-blackhat\gameloop\playercontroll.h
 
-1490526242 a:\mission-blackhat\gameloop\bulletcontroll.h
+1491459532 a:\mission-blackhat\gameloop\bulletcontroll.h
+
+1491459590 a:\mission-blackhat\gameloop\mapcontroll.h
 

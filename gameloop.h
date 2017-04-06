@@ -4,6 +4,7 @@
 #include "gameloop/allycontroll.h"
 #include "gameloop/bulletcontroll.h"
 #include "gameloop/playercontroll.h"
+#include "gameloop/mapcontroll.h"
 
 void GameLoop()
 {
@@ -29,13 +30,22 @@ void GameLoop()
                     #include "gameloop/keyboard.h"
                     break;
             }
+            mapcontroll();
             allycontroll(&ally, &player1);
             playercontroll(&player1);
 
-            //!VIP
-            bulletcontroll(&player1, bullet1);
+            //!Camera Control
+            ScreenX1 = player1.x-ScreenWidth/2;
+            ScreenX2 = player1.x+ScreenWidth/2;
+            ScreenY1 = player1.x-ScreenHeight/2;
+            ScreenY2 = player1.x+ScreenHeight/2;
+
+            //!WIP
+
             draw=1;
         }//-!while(al_get_next_event())
+        //bulletcontroll(&player1, bullet1);
+        draw=1;
         if(draw)
         {
             #include "gameloop/drawing.h"

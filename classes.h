@@ -30,7 +30,7 @@ class bullet {
 public:
     float x;
     float y;
-    float speed=0 ;
+    float speed=0.0;
     float tx;
     float ty;
     string name;

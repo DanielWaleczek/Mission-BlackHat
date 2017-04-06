@@ -62,6 +62,12 @@ float SoundsVolume          = 0.5;
 float GuiVolume             = 0.5;
 float MusicVolume           = 0.5;
 
+float ScreenX1              = 0;
+float ScreenX2              = 0;
+float ScreenY1              = 0;
+float ScreenY2              = 0;
+
+
 ////////////////////
 //////ALLEGRO 5/////
 ////////////////////
@@ -125,6 +131,8 @@ ALLEGRO_FILE *file_locale;//Locale file
 //CONFIG
 ALLEGRO_CONFIG *GameConfig;//Config
 ALLEGRO_CONFIG *flocale;//Locale
+
+ALLEGRO_MAP *Map;
 
 
 #endif // GLOBALS_H_INCLUDED
