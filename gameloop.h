@@ -30,7 +30,7 @@ void GameLoop()
                     #include "gameloop/keyboard.h"
                     break;
             }
-            mapcontroll();
+            mapcontroll("data/maps/text.txt");
             allycontroll(&ally, &player1);
             playercontroll(&player1);
 

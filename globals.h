@@ -3,7 +3,10 @@
 
 #define CONSOLE_NAME        "Debug Console"
 #define GAME_WINDOW_NAME    "Mission: Prison v0.0"
+#define TileSize            32
 
+
+int mapSizeX, mapSizeY;
 ////////////////////
 //GLOBAL VARIABLES//
 ////////////////////
@@ -132,7 +135,6 @@ ALLEGRO_FILE *file_locale;//Locale file
 ALLEGRO_CONFIG *GameConfig;//Config
 ALLEGRO_CONFIG *flocale;//Locale
 
-ALLEGRO_MAP *Map;
 
 
 #endif // GLOBALS_H_INCLUDED

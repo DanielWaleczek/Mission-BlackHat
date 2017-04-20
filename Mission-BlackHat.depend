@@ -1,12 +1,18 @@
 # depslib dependency file v1.0
-1491459318 source:a:\mission-blackhat\main.cpp
+1492702439 source:a:\mission-blackhat\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
 	<math.h>
 	<sstream>
+	<fstream>
+	<glib/glib.h>
 	<vector>
 	<windows.h>
+	<memory>
+	<stdio.h>
+	<libxml/parser.h>
+	<libxml/tree.h>
 	<allegro5/allegro5.h>
 	<allegro5/allegro_acodec.h>
 	<allegro5/allegro_audio.h>
@@ -21,8 +27,8 @@
 	"globals.h"
 	"classes.h"
 	"colors.h"
-	"gameloop.h"
 	"exitgame.h"
+	"gameloop.h"
 	"gameloop.h"
 	"mainmenu.h"
 	"init.h"
@@ -43,11 +49,11 @@
 
 1488390118 a:\mission-blackhat\colors.h
 
-1491459749 a:\mission-blackhat\globals.h
+1492700164 a:\mission-blackhat\globals.h
 
 1489489327 a:\mission-blackhat\exitgame.h
 
-1491459771 a:\mission-blackhat\gameloop.h
+1492700229 a:\mission-blackhat\gameloop.h
 	"gameloop/allycontroll.h"
 	"gameloop/bulletcontroll.h"
 	"gameloop/playercontroll.h"
@@ -58,7 +64,7 @@
 
 1488802519 a:\mission-blackhat\mainmenu.h
 
-1490344619 a:\mission-blackhat\init.h
+1492248182 a:\mission-blackhat\init.h
 	"init/allegro.h"
 	"init/fonts.h"
 	"init/display.h"
@@ -67,7 +73,7 @@
 	"init/iodevices.h"
 	"init/timers.h"
 
-1491459825 a:\mission-blackhat\gameloop\drawing.h
+1492702586 a:\mission-blackhat\gameloop\drawing.h
 
 1490688625 a:\mission-blackhat\classes.h
 
@@ -81,5 +87,7 @@
 
 1491459532 a:\mission-blackhat\gameloop\bulletcontroll.h
 
-1491459590 a:\mission-blackhat\gameloop\mapcontroll.h
+1492700164 a:\mission-blackhat\gameloop\mapcontroll.h
+
+1492260010 a:\mission-blackhat\xml.h
 
