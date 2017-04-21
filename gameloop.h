@@ -16,6 +16,12 @@ void GameLoop()
     al_start_timer(timer_timer);
     al_start_timer(timer_animtimer);
 
+    cout<<"\nLoading map...";
+    rapidxml::xml_document<> tmap;
+    #include "gameloop/xml.h"
+
+    cout<<"\n"<<mapSizeX<<" "<<mapSizeY;
+
     while(!Exit)
     {
         while(al_get_next_event(event_queue, &event))

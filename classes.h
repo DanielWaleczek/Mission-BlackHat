@@ -36,4 +36,10 @@ public:
     string name;
 
 };
+
+class mmap {
+public:
+    const char* filename;
+
+};
 #endif // CLASSES_H_INCLUDED
