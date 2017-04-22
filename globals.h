@@ -3,10 +3,7 @@
 
 #define CONSOLE_NAME        "Debug Console"
 #define GAME_WINDOW_NAME    "Mission: Prison v0.0"
-#define TileSize            32
 
-
-int mapSizeX, mapSizeY;
 ////////////////////
 //GLOBAL VARIABLES//
 ////////////////////

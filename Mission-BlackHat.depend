@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1492796607 source:a:\mission-blackhat\main.cpp
+1492810422 source:a:\mission-blackhat\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
@@ -47,17 +47,16 @@
 
 1488390118 a:\mission-blackhat\colors.h
 
-1492703152 a:\mission-blackhat\globals.h
+1492800601 a:\mission-blackhat\globals.h
 
 1489489327 a:\mission-blackhat\exitgame.h
 
-1492795438 a:\mission-blackhat\gameloop.h
+1492848293 a:\mission-blackhat\gameloop.h
 	"gameloop/allycontroll.h"
 	"gameloop/bulletcontroll.h"
 	"gameloop/playercontroll.h"
 	"gameloop/mapcontroll.h"
 	"classescreator.h"
-	"gameloop/xml.h"
 	"gameloop/keyboard.h"
 	"gameloop/drawing.h"
 
@@ -74,7 +73,7 @@
 
 1492711539 a:\mission-blackhat\gameloop\drawing.h
 
-1490688625 a:\mission-blackhat\classes.h
+1492810272 a:\mission-blackhat\classes.h
 
 1491459825 a:\mission-blackhat\classescreator.h
 
@@ -86,9 +85,9 @@
 
 1491459532 a:\mission-blackhat\gameloop\bulletcontroll.h
 
-1492795208 a:\mission-blackhat\gameloop\mapcontroll.h
+1492848171 a:\mission-blackhat\gameloop\mapcontroll.h
 
 1492260010 a:\mission-blackhat\xml.h
 
-1492795643 a:\mission-blackhat\gameloop\xml.h
+1492810244 a:\mission-blackhat\gameloop\xml.h
 

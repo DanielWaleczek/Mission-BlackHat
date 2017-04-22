@@ -1,24 +1,66 @@
 #ifndef XML_H_INCLUDED
 #define XML_H_INCLUDED
 
-cout<<"\nLoading map file...";
-ifstream file("data/maps/test.tmx");
+if(DEBUG) cout<<"\nLoading map file...";
+ifstream file(TestMap.filename);
 if(!file.is_open())
     ExitGame("Failed to load 'data/maps/test.tmx'");
 stringstream buffer;
-cout<<"\nPutting file to buffer...";
+if(DEBUG) cout<<"\nPutting file to buffer...";
 buffer << file.rdbuf();
-cout<<"\nClosing file...";
+if(DEBUG) cout<<"\nClosing file...";
 file.close();
-cout<<"\nConverting file to string...";
+if(DEBUG) cout<<"\nConverting file to string...";
 string content(buffer.str());
 tmap.parse<0>(&content[0]);
 
+stringstream sstemp;
+string stemp;
 //!Loading map
-cout<<"\nGetting map info...";
+if(DEBUG) cout<<"\nGetting map info...";
 using namespace rapidxml;
+xml_node<> *pRoot = tmap.first_node();
+if(DEBUG) cout<<"\n  >map >width: ";
 xml_node<> *pNode = tmap.first_node();
 xml_attribute<> *pAttr = pNode->first_attribute("width");
-mapSizeX = atoi(pAttr->value());
+TestMap.mapWidth = atoi(pAttr->value());
+if(DEBUG) cout<<TestMap.mapWidth;
+
+if(DEBUG) cout<<"\n  >map >height: ";
+pAttr = pNode->first_attribute("height");
+TestMap.mapHeight = atoi(pAttr->value());
+if(DEBUG) cout<<TestMap.mapHeight;
+
+if(DEBUG) cout<<"\n  >map >tilewidth: ";
+pAttr = pNode->first_attribute("tilewidth");
+TestMap.tileWidth = atoi(pAttr->value());
+if(DEBUG) cout<<TestMap.tileWidth;
+
+if(DEBUG) cout<<"\n  >map >tileheight: ";
+pAttr = pNode->first_attribute("tileheight");
+TestMap.tileHeight = atoi(pAttr->value());
+if(DEBUG) cout<<TestMap.tileHeight;
+
+short int i=1;
+for(pNode=pRoot->first_node("tileset"); pNode; pNode=pNode->next_sibling("tileset"))
+{
+    if(DEBUG) cout<<"\n  >tileset >source: ";
+
+    pAttr = pNode->first_attribute("name");
+    sstemp<<pAttr->value();
+    stemp=sstemp.str();
+    sstemp.str("");
+    sstemp<<"data/terrain/"<<stemp<<".png";
+    TestMap.TileSource[i] = sstemp.str();
+    TestMap.TileBitmap[i] = al_load_bitmap(sstemp.str().c_str());
+    if(DEBUG) cout<<TestMap.TileBitmap[i];
+    sstemp.str("");
+    i++;
+}
+
+
+
+//!Loading textures...
+cout<<"\nLoading textures...";
 
 #endif // XML_H_INCLUDED

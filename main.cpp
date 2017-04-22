@@ -29,7 +29,7 @@
 #include <allegro5/allegro_ttf.h>
 #include <allegro5/allegro_video.h>
 
-bool DEBUG;
+bool DEBUG=false;
 
 using namespace std;
 
@@ -55,18 +55,17 @@ int main()
     if(tempchar == 'Y' || tempchar == 'y')
     {
         DEBUG=1;
-        Beep(1240, 100); Beep(1240, 100);
+        Beep(1240, 100); cout<<"\a"; Beep(1240, 100);
         cout<<"Debug mode activated!";
-        al_rest(5);
+        al_rest(3.00);
     }
-    else
-        DEBUG=0;
     cmdGray
 
     cout<<"\n\nLoading Mission: BlackHat...";
     #include "init.h"  //Loading module
 
 
+    cout<<"DAWDWAWWD";
     MainMenu();
 
     //DEBUG

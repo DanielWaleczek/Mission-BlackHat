@@ -40,6 +40,13 @@ public:
 class mmap {
 public:
     const char* filename;
+    short int mapWidth;
+    short int mapHeight;
+    short int tileWidth=64;
+    short int tileHeight=64;
 
+    ALLEGRO_BITMAP *TileBitmap[1000];
+    string TileSource[1000];//sourcep[number]
+    short int Map[1000][1000];//number[x][y]
 };
 #endif // CLASSES_H_INCLUDED

@@ -8,7 +8,9 @@
 
 void GameLoop()
 {
+    cout<<endl<<"DAWD";
     #include "classescreator.h"
+    cout<<endl<<"!@#!";
     bool draw=1, Exit=0;
     al_clear_to_color(rgbBlack);
     al_flip_display();
@@ -17,10 +19,10 @@ void GameLoop()
     al_start_timer(timer_animtimer);
 
     cout<<"\nLoading map...";
+    mmap TestMap;
+    TestMap.filename="data/maps/test.tmx";
     rapidxml::xml_document<> tmap;
-    #include "gameloop/xml.h"
-
-    cout<<"\n"<<mapSizeX<<" "<<mapSizeY;
+    //#include "gameloop/xml.h"
 
     while(!Exit)
     {
@@ -36,7 +38,7 @@ void GameLoop()
                     #include "gameloop/keyboard.h"
                     break;
             }
-            mapcontroll("data/maps/text.txt");
+            mapcontroll();
             allycontroll(&ally, &player1);
             playercontroll(&player1);
 
@@ -51,7 +53,6 @@ void GameLoop()
             draw=1;
         }//-!while(al_get_next_event())
         //bulletcontroll(&player1, bullet1);
-        draw=1;
         if(draw)
         {
             #include "gameloop/drawing.h"
