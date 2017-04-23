@@ -7,30 +7,30 @@ void bulletcontroll(Player *PlayerTemp, bullet *BulletTemp)
 {
     if(PlayerTemp->shot)
     {
-       BulletTemp->speed=100;
-       //!BULLET DIRECTION
-       if(MouseX<PlayerTemp->x && MouseY<PlayerTemp->y)//TOP LEFT
-       {
+        BulletTemp->speed=100;
+        //!BULLET DIRECTION
+        if(MouseX<PlayerTemp->x && MouseY<PlayerTemp->y)//TOP LEFT
+        {
             BulletTemp->tx=PlayerTemp->x-MouseX+ScreenX1;
             BulletTemp->ty=PlayerTemp->y-MouseY+ScreenY1;
-       }
-       else if(MouseX>PlayerTemp->x && MouseY<PlayerTemp->y)//TOP RIGHT
-       {
+        }
+        else if(MouseX>PlayerTemp->x && MouseY<PlayerTemp->y)//TOP RIGHT
+        {
             BulletTemp->tx=PlayerTemp->x+MouseX+ScreenX1;
             BulletTemp->ty=PlayerTemp->y-MouseY+ScreenY1;
-       }
-       else if(MouseX<PlayerTemp->x && MouseY>PlayerTemp->y)//BOTTOM LEFT
-       {
+        }
+        else if(MouseX<PlayerTemp->x && MouseY>PlayerTemp->y)//BOTTOM LEFT
+        {
             BulletTemp->tx=PlayerTemp->x-MouseX+ScreenX1;
             BulletTemp->ty=PlayerTemp->y+MouseY+ScreenY1;
-       }
-       else if(MouseX>PlayerTemp->x && MouseY>PlayerTemp->y)//BOTTOM RIGHT
-       {
+        }
+        else if(MouseX>PlayerTemp->x && MouseY>PlayerTemp->y)//BOTTOM RIGHT
+        {
             BulletTemp->tx=PlayerTemp->x+MouseX+ScreenX1;
             BulletTemp->ty=PlayerTemp->y+MouseY+ScreenY1;
-       }
-       BulletTemp->x=PlayerTemp->x;
-       BulletTemp->y=PlayerTemp->y;
+        }
+        BulletTemp->x=PlayerTemp->x;
+        BulletTemp->y=PlayerTemp->y;
     }
 
     if(BulletTemp->x == BulletTemp->tx || BulletTemp->y == BulletTemp->ty)

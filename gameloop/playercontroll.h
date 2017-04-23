@@ -15,9 +15,9 @@ void playercontroll(Player *PlayerTemp)
     //!PLAYER ANGLE UPDATE
     //if(MouseX>PlayerTemp->x && MouseY<PlayerTemp->y)//top right
     //{
-        PlayerTemp->angle=atan2(MouseY-ScreenHeight/2, MouseX-ScreenWidth/2);
-        //cout<<endl<<PlayerTemp->angle<<"     "<<MouseX<<"    "<<MouseY;
-        //al_rest(0.01);
+    PlayerTemp->angle=atan2(MouseY-ScreenHeight/2, MouseX-ScreenWidth/2);
+    //cout<<endl<<PlayerTemp->angle<<"     "<<MouseX<<"    "<<MouseY;
+    //al_rest(0.01);
     //}
 
 

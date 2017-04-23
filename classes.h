@@ -1,8 +1,9 @@
 #ifndef CLASSES_H_INCLUDED
 #define CLASSES_H_INCLUDED
 
-class Player {
-    public:
+class Player
+{
+public:
     float x;
     float y;
     float angle;
@@ -15,8 +16,9 @@ class Player {
     float playermodelHeight;
 };
 
-class character {
-    public:
+class character
+{
+public:
     float x;
     float y;
     float speed;
@@ -26,7 +28,8 @@ class character {
     bool following;
 };
 
-class bullet {
+class bullet
+{
 public:
     float x;
     float y;
@@ -37,9 +40,10 @@ public:
 
 };
 
-class mmap {
+class mmap
+{
 public:
-    const char* filename;
+    short int id;
     short int mapWidth;
     short int mapHeight;
     short int tileWidth=64;

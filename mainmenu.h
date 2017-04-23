@@ -16,16 +16,16 @@ int MainMenu()
 
 
     //if mouse.click == x1 y1 x2 y2
-        //NewGame();
-        GameLoop();
+    //NewGame();
+    GameLoop();
     //else if mouse.click == x1 y1 x2 y2
-        //LoadGame();
+    //LoadGame();
     //else if mouse.click == x1 y1 x2 y2
-        //Options();
+    //Options();
     //else if mouse.click == x1 y1 x2 y2
-        //Credits();
+    //Credits();
     //else if mouse.click == x1 y1 x2 y2
-        //ExitGame();
+    //ExitGame();
 
 
     return 0;

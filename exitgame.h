@@ -5,9 +5,11 @@ int ExitGame(string ErrorName="")
 {
     if(ErrorName!="")
     {
-        cmdRed cout<<endl<<endl<<ErrorName<<"\n  Failed to start the game! Shutting down..."; cmdGray
+        cmdRed cout<<endl<<endl<<ErrorName<<"\n  Failed to start the game! Shutting down...";
+        cmdGray
     }
-    cmdWhite cout<<"\nShutting down the game..."; cmdGray
+    cmdWhite cout<<"\nShutting down the game...";
+    cmdGray
 
     //!Uninstalling input devices...
     cout<<"\nUninstalling input devices...";

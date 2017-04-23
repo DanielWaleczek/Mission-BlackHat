@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1492939470 source:a:\mission_blackhat\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	<math.h>
+	<sstream>
+	<rapidxml/rapidxml.hpp>
+	<rapidxml/rapidxml_print.hpp>
+	<fstream>
+	<windows.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_color.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_video.h>
+	"globals.h"
+	"classes.h"
+	"colors.h"
+	"exitgame.h"
+	"gameloop.h"
+	"gameloop.h"
+	"mainmenu.h"
+	"init.h"
+
+1492958778 a:\mission_blackhat\globals.h
+
+1492938639 a:\mission_blackhat\classes.h
+
+1488390118 a:\mission_blackhat\colors.h
+
+1492938639 a:\mission_blackhat\exitgame.h
+
+1492938639 a:\mission_blackhat\gameloop.h
+	"gameloop/allycontroll.h"
+	"gameloop/bulletcontroll.h"
+	"gameloop/playercontroll.h"
+	"gameloop/mapcontroll.h"
+	"classescreator.h"
+	"gameloop/xml.h"
+	"gameloop/keyboard.h"
+	"gameloop/drawing.h"
+
+1490366145 a:\mission_blackhat\gameloop\allycontroll.h
+
+1492938639 a:\mission_blackhat\gameloop\bulletcontroll.h
+
+1492938639 a:\mission_blackhat\gameloop\playercontroll.h
+
+1492958735 a:\mission_blackhat\gameloop\mapcontroll.h
+
+1492938639 a:\mission_blackhat\classescreator.h
+
+1492958798 a:\mission_blackhat\gameloop\xml.h
+
+1490526152 a:\mission_blackhat\gameloop\keyboard.h
+
+1492711539 a:\mission_blackhat\gameloop\drawing.h
+
+1492938639 a:\mission_blackhat\mainmenu.h
+
+1492248182 a:\mission_blackhat\init.h
+	"init/allegro.h"
+	"init/fonts.h"
+	"init/display.h"
+	"init/audio.h"
+	"init/bitmaps.h"
+	"init/iodevices.h"
+	"init/timers.h"
+
+1492851452 a:\mission_blackhat\init\allegro.h
+
+1492849974 a:\mission_blackhat\init\fonts.h
+
+1492850086 a:\mission_blackhat\init\display.h
+
+1486371804 a:\mission_blackhat\init\audio.h
+
+1492851863 a:\mission_blackhat\init\bitmaps.h
+
+1492852467 a:\mission_blackhat\init\iodevices.h
+
+1492938639 a:\mission_blackhat\init\timers.h
+

@@ -8,8 +8,8 @@
 
 void GameLoop()
 {
-    cout<<endl<<"DAWD";
-    #include "classescreator.h"
+    cout<<endl<<"BOF gameloop.h";
+#include "classescreator.h"
     cout<<endl<<"!@#!";
     bool draw=1, Exit=0;
     al_clear_to_color(rgbBlack);
@@ -20,9 +20,9 @@ void GameLoop()
 
     cout<<"\nLoading map...";
     mmap TestMap;
-    TestMap.filename="data/maps/test.tmx";
-    rapidxml::xml_document<> tmap;
-    //#include "gameloop/xml.h"
+    TestMap.id=0;
+//    xml_document<> doc;
+#include "gameloop/xml.h"
 
     while(!Exit)
     {
@@ -30,13 +30,14 @@ void GameLoop()
         {
             switch(event.type)
             {
-                case ALLEGRO_EVENT_TIMER:
-                    //!MOUSE
-                    al_get_mouse_state(&mouse_state);
-                    MouseX = mouse_state.x; MouseY = mouse_state.y;
-                    //!KEYBOARD KEYS
-                    #include "gameloop/keyboard.h"
-                    break;
+            case ALLEGRO_EVENT_TIMER:
+                //!MOUSE
+                al_get_mouse_state(&mouse_state);
+                MouseX = mouse_state.x;
+                MouseY = mouse_state.y;
+                //!KEYBOARD KEYS
+#include "gameloop/keyboard.h"
+                break;
             }
             mapcontroll();
             allycontroll(&ally, &player1);
@@ -55,11 +56,12 @@ void GameLoop()
         //bulletcontroll(&player1, bullet1);
         if(draw)
         {
-            #include "gameloop/drawing.h"
+#include "gameloop/drawing.h"
         }
 
         //STOP TRIGGER - SHOTING
         player1.shot=0;
     }
+    cout<<"\nEOF gameloop.h!";
 }
 #endif // GAMELOOP_H_INCLUDED

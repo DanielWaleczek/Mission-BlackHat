@@ -3,20 +3,13 @@
 
 void drawmap()
 {
-//    for(int i=0; i<mapSizeX; i++)
-//    {
-//        for(int j=0; j<mapSizeY; j++)
-//        {
-//            if(tempmap[i][j]==0)
-//                al_draw_filled_rectangle(i*TileSize, j*TileSize, i*(TileSize*2), i*(TileSize*2), rgbGray);
-//            else if(tempmap[i][j]==1)
-//                al_draw_filled_rectangle(i*TileSize, j*TileSize, i*(TileSize*2), i*(TileSize*2), rgbWhite);
-//            else if(tempmap[i][j]==65)
-//                al_draw_filled_rectangle(i*TileSize, j*TileSize, i*(TileSize*2), i*(TileSize*2), rgbRed);
-//            else
-//                al_draw_filled_rectangle(i*TileSize, j*TileSize, i*(TileSize*2), i*(TileSize*2), rgbBlack);
-//        }
-//    }
+    for(short int i=0; i<100; i++)
+    {
+        for(short int j=0; j<100; j++)
+        {
+
+        }
+    }
 }
 
 void mapcontroll()

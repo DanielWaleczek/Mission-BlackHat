@@ -77,6 +77,7 @@ ALLEGRO_BITMAP *bitmap_player;
 ALLEGRO_BITMAP *bitmap_enemy;
 ALLEGRO_BITMAP *bitmap_temp;
 
+ALLEGRO_BITMAP *bitmap_terrain_grass01;
 //SPRITES
 //!ALLEGRO_BITMAP *anim_walk[10];
 
@@ -132,6 +133,8 @@ ALLEGRO_FILE *file_locale;//Locale file
 ALLEGRO_CONFIG *GameConfig;//Config
 ALLEGRO_CONFIG *flocale;//Locale
 
-
+/////////////////////
+//!////FUNCTIONS/////
+/////////////////////
 
 #endif // GLOBALS_H_INCLUDED

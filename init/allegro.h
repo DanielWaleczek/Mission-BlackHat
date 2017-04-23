@@ -1,7 +1,7 @@
 #ifndef ALLEGRO_H_INCLUDED
 #define ALLEGRO_H_INCLUDED
 
-if(DEBUG) cout<<"\n  Initializing Allegro5 Core..."
+if(DEBUG) cout<<"\n  Initializing Allegro5 Core...";
 if(!al_init())
     ExitGame("Failed to initialize Allegro5 Core!");
 
