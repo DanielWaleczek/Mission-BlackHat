@@ -17,15 +17,15 @@ player1.playermodelWidth = al_get_bitmap_width(bitmap_player);
 player1.playermodelHeight = al_get_bitmap_height(bitmap_player);
 
 //!PLAYER2
-if(Multiplayer)
-{
-    Player player2;
-    player2.character   = Player2CharacterName;
-    player2.name        = Player2Name;
-    player2.speed       = 5.0;
-    player2.x           = 200.0;
-    player2.y           = 200.0;
-}
+//if(Multiplayer)
+//{
+ //   Player player2;
+   // player2.character   = Player2CharacterName;
+    //player2.name        = Player2Name;
+    //player2.speed       = 5.0;
+    //player2.x           = 200.0;
+    //player2.y           = 200.0;
+//}
 
 character enemy;
 enemy.character = "data/enemy.png";

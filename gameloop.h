@@ -9,7 +9,9 @@
 void GameLoop()
 {
     cout<<endl<<"BOF gameloop.h";
-#include "classescreator.h"
+
+    #include "classescreator.h"
+
     cout<<endl<<"!@#!";
     bool draw=1, Exit=0;
     al_clear_to_color(rgbBlack);

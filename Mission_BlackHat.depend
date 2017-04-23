@@ -28,7 +28,7 @@
 	"mainmenu.h"
 	"init.h"
 
-1492958778 a:\mission_blackhat\globals.h
+1492960969 a:\mission_blackhat\globals.h
 
 1492938639 a:\mission_blackhat\classes.h
 
@@ -36,7 +36,7 @@
 
 1492938639 a:\mission_blackhat\exitgame.h
 
-1492938639 a:\mission_blackhat\gameloop.h
+1492962854 a:\mission_blackhat\gameloop.h
 	"gameloop/allycontroll.h"
 	"gameloop/bulletcontroll.h"
 	"gameloop/playercontroll.h"
@@ -52,15 +52,15 @@
 
 1492938639 a:\mission_blackhat\gameloop\playercontroll.h
 
-1492958735 a:\mission_blackhat\gameloop\mapcontroll.h
+1492966640 a:\mission_blackhat\gameloop\mapcontroll.h
 
-1492938639 a:\mission_blackhat\classescreator.h
+1492962814 a:\mission_blackhat\classescreator.h
 
-1492958798 a:\mission_blackhat\gameloop\xml.h
+1492960947 a:\mission_blackhat\gameloop\xml.h
 
 1490526152 a:\mission_blackhat\gameloop\keyboard.h
 
-1492711539 a:\mission_blackhat\gameloop\drawing.h
+1492962891 a:\mission_blackhat\gameloop\drawing.h
 
 1492938639 a:\mission_blackhat\mainmenu.h
 
@@ -81,7 +81,7 @@
 
 1486371804 a:\mission_blackhat\init\audio.h
 
-1492851863 a:\mission_blackhat\init\bitmaps.h
+1492959455 a:\mission_blackhat\init\bitmaps.h
 
 1492852467 a:\mission_blackhat\init\iodevices.h
 

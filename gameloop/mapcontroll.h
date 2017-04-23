@@ -1,13 +1,31 @@
 #ifndef MAPCONTROLL_H_INCLUDED
 #define MAPCONTROLL_H_INCLUDED
 
-void drawmap()
+void drawmap(Player *TempPlayer)
 {
-    for(short int i=0; i<100; i++)
+    for(short int x=0; x<100; x++)
     {
-        for(short int j=0; j<100; j++)
+        for(short int y=0; y<100; y++)
         {
-
+            if(x*32<=TempPlayer->x+200&& x*32>=TempPlayer->x-200&& y*32<=TempPlayer->y+ScreenHeight && y*32>=TempPlayer->y-ScreenHeight)
+            switch(Map[y][x])
+            {
+            case 1:
+                al_draw_bitmap(bitmap_terrain_path01, x*BlockSize, y*BlockSize, 0);
+                break;
+            case 2:
+                al_draw_bitmap(bitmap_terrain_grass01, x*BlockSize, y*BlockSize, 0);
+                break;
+            case 3:
+                al_draw_bitmap(bitmap_terrain_water01, x*BlockSize, y*BlockSize, 0);
+                break;
+            case 4:
+                al_draw_bitmap(bitmap_terrain_path01, x*BlockSize, y*BlockSize, 0);
+                break;
+            default:
+                al_draw_filled_rectangle(x*BlockSize, y*BlockSize, x*BlockSize+BlockSize, y *BlockSize+BlockSize, rgbBlack);
+                break;
+            }
         }
     }
 }
