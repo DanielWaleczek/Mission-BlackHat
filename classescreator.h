@@ -6,7 +6,7 @@
 Player player1;
 player1.character   = Player1CharacterName;
 player1.name        = Player1Name;
-player1.speed       = 5.0;
+player1.speed       = 10.0;
 player1.x           = 255.0;
 player1.y           = 255.0;
 player1.angle       = 0;

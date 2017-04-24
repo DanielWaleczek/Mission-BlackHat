@@ -7,7 +7,8 @@ void drawmap(Player *TempPlayer)
     {
         for(short int y=0; y<100; y++)
         {
-            if(x*32<=TempPlayer->x+200&& x*32>=TempPlayer->x-200&& y*32<=TempPlayer->y+ScreenHeight && y*32>=TempPlayer->y-ScreenHeight)
+            if(x*64-64<TempPlayer->x+ScreenWidth/2&& x*64+64>TempPlayer->x-ScreenWidth/2&& y*64-64<=TempPlayer->y+ScreenHeight/2 && y*64+64>=TempPlayer->y-ScreenHeight/2)
+
             switch(Map[y][x])
             {
             case 1:
@@ -17,6 +18,23 @@ void drawmap(Player *TempPlayer)
                 al_draw_bitmap(bitmap_terrain_grass01, x*BlockSize, y*BlockSize, 0);
                 break;
             case 3:
+                if(TempPlayer->x>=x*BlockSize && TempPlayer->x<=x*BlockSize+BlockSize && TempPlayer->y>=y*BlockSize && TempPlayer->y<=y*BlockSize+BlockSize)
+                {
+                    if(TempPlayer->x>=x*BlockSize+BlockSize/2)
+                        TempPlayer->x=x*BlockSize+BlockSize+16;
+                    else if(TempPlayer->x<x*BlockSize+BlockSize/2)
+                        TempPlayer->x=x*BlockSize-16;
+                    else TempPlayer->x++;
+                    if(TempPlayer->y>=y*BlockSize+BlockSize/2)
+                        TempPlayer->y=y*BlockSize+BlockSize+16;
+                    else if(TempPlayer->y<y*BlockSize+BlockSize/2)
+                        TempPlayer->y=y*BlockSize-16;
+                    else
+                    {
+
+                        TempPlayer->y++;
+                    }
+                }
                 al_draw_bitmap(bitmap_terrain_water01, x*BlockSize, y*BlockSize, 0);
                 break;
             case 4:
