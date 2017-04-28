@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1492939470 source:a:\mission_blackhat\main.cpp
+1493375615 source:a:\mission_blackhat\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
@@ -28,7 +28,7 @@
 	"mainmenu.h"
 	"init.h"
 
-1493028250 a:\mission_blackhat\globals.h
+1493107697 a:\mission_blackhat\globals.h
 
 1492938639 a:\mission_blackhat\classes.h
 
@@ -50,17 +50,18 @@
 
 1492938639 a:\mission_blackhat\gameloop\bulletcontroll.h
 
-1492938639 a:\mission_blackhat\gameloop\playercontroll.h
+1493380661 a:\mission_blackhat\gameloop\playercontroll.h
 
-1493029718 a:\mission_blackhat\gameloop\mapcontroll.h
+1493381600 a:\mission_blackhat\gameloop\mapcontroll.h
+	"collisions.h"
 
-1493029535 a:\mission_blackhat\classescreator.h
+1493376623 a:\mission_blackhat\classescreator.h
 
-1493022743 a:\mission_blackhat\gameloop\xml.h
+1493078859 a:\mission_blackhat\gameloop\xml.h
 
 1490526152 a:\mission_blackhat\gameloop\keyboard.h
 
-1492962891 a:\mission_blackhat\gameloop\drawing.h
+1493381630 a:\mission_blackhat\gameloop\drawing.h
 
 1492938639 a:\mission_blackhat\mainmenu.h
 
@@ -81,9 +82,11 @@
 
 1486371804 a:\mission_blackhat\init\audio.h
 
-1492959455 a:\mission_blackhat\init\bitmaps.h
+1493108992 a:\mission_blackhat\init\bitmaps.h
 
 1492852467 a:\mission_blackhat\init\iodevices.h
 
 1492938639 a:\mission_blackhat\init\timers.h
+
+1493383364 a:\mission_blackhat\gameloop\collisions.h
 

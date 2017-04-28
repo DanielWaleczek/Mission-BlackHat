@@ -20,9 +20,15 @@ void playercontroll(Player *PlayerTemp)
     //al_rest(0.01);
     //}
 
-
-
-
+    //!EDGE COLLISION
+    if(PlayerTemp->x<0)
+        PlayerTemp->x+=PlayerTemp->speed;
+    else if(PlayerTemp->x>3008)
+        PlayerTemp->x-=PlayerTemp->speed;
+    if(PlayerTemp->y<0)
+        PlayerTemp->y+=PlayerTemp->speed;
+    else if(PlayerTemp->y>960)
+        PlayerTemp->y-=PlayerTemp->speed;
 
 }
 

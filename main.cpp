@@ -38,7 +38,6 @@ using namespace rapidxml;
 #include "exitgame.h"
 //Game loop
 #include "gameloop.h"
-
 //Main Menu
 #include "gameloop.h"
 #include "mainmenu.h"

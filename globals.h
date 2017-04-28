@@ -47,7 +47,7 @@ short int CenterY           = 0;//screen Y center (ScreenHeight/2)
 short int SamplesNumber     = 10;//Number of samples which are play on the same time.
 
 //PERFORMANCE VARIABLES
-const float FPS             = 30;//Screen update per seconds
+const float FPS             = 60;//Screen update per seconds
 const float AnimFPS         = 10;//Animation update per seconds
 
 //CAMERA VARIABLES

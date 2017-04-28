@@ -1,7 +1,7 @@
 #ifndef MAPCONTROLL_H_INCLUDED
 #define MAPCONTROLL_H_INCLUDED
 
-void drawmap(Player *TempPlayer)
+void drawmap(Player *TempPlayer, character *TempCharacter)
 {
     for(short int x=0; x<100; x++)
     {
@@ -18,29 +18,14 @@ void drawmap(Player *TempPlayer)
                 al_draw_bitmap(bitmap_terrain_grass01, x*BlockSize, y*BlockSize, 0);
                 break;
             case 3:
-                if(TempPlayer->x>=x*BlockSize && TempPlayer->x<=x*BlockSize+BlockSize && TempPlayer->y>=y*BlockSize && TempPlayer->y<=y*BlockSize+BlockSize)
-                {
-                    if(TempPlayer->x>=x*BlockSize+BlockSize/2)
-                        TempPlayer->x=x*BlockSize+BlockSize+16;
-                    else if(TempPlayer->x<x*BlockSize+BlockSize/2)
-                        TempPlayer->x=x*BlockSize-16;
-                    else TempPlayer->x++;
-                    if(TempPlayer->y>=y*BlockSize+BlockSize/2)
-                        TempPlayer->y=y*BlockSize+BlockSize+16;
-                    else if(TempPlayer->y<y*BlockSize+BlockSize/2)
-                        TempPlayer->y=y*BlockSize-16;
-                    else
-                    {
-
-                        TempPlayer->y++;
-                    }
-                }
-                al_draw_bitmap(bitmap_terrain_water01, x*BlockSize, y*BlockSize, 0);
+                #include "collisions.h"
+                //al_draw_bitmap(bitmap_terrain_water01, x*BlockSize, y*BlockSize, 0);
                 break;
             case 4:
                 al_draw_bitmap(bitmap_terrain_path01, x*BlockSize, y*BlockSize, 0);
                 break;
             default:
+                //#include "collisions.h"
                 al_draw_filled_rectangle(x*BlockSize, y*BlockSize, x*BlockSize+BlockSize, y *BlockSize+BlockSize, rgbBlack);
                 break;
             }

@@ -1,2 +1,5 @@
 *.cbp
 *.layout
+*.lnk
+**/data/temp
+credits.txt
