@@ -1,6 +1,7 @@
 #ifndef GAMELOOP_H_INCLUDED
 #define GAMELOOP_H_INCLUDED
 //Here will be main game loop
+#include "gameloop/hud.h"
 #include "gameloop/allycontroll.h"
 #include "gameloop/bulletcontroll.h"
 #include "gameloop/playercontroll.h"

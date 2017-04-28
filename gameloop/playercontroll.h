@@ -3,6 +3,12 @@
 
 void playercontroll(Player *PlayerTemp)
 {
+    if(PlayerTemp->HP>100)
+        PlayerTemp->HP=100;
+    if(PlayerTemp->HP<=0)
+    {
+        PlayerTemp->HP=0;
+    }
     //Camera will follow the player
     PlayerTemp->CameraPosition[0] = -(ScreenWidth/2) + (PlayerTemp->x+32/2);
     PlayerTemp->CameraPosition[1] = -(ScreenHeight/2) + (PlayerTemp->y+32/2);

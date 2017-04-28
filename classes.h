@@ -14,6 +14,7 @@ public:
     bool shot;
     float playermodelWidth;
     float playermodelHeight;
+    short int HP;
 };
 
 class character

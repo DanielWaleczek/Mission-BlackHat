@@ -15,6 +15,8 @@ al_draw_rotated_bitmap(bitmap_player, player1.playermodelWidth/2, player1.player
 
 }*/
 
+DrawHud(&player1);
+
 al_flip_display();
 draw=0;
 
