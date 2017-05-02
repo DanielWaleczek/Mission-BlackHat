@@ -15,6 +15,13 @@ public:
     float playermodelWidth;
     float playermodelHeight;
     short int HP;
+
+    //!Gun
+    string GunName;
+    short int GunMagMaxAmmo;
+    short int GunMagAmmo;
+    short int GunAmmo;
+
 };
 
 class character

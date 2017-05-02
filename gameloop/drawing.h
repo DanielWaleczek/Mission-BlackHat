@@ -2,7 +2,7 @@
 #define DRAWING_H_INCLUDED
 
 al_clear_to_color(rgbBlack);
-drawmap(&player1, &ally);
+drawmap(&player1, &ally, lavaanim); lavaanim++; if(lavaanim>=45) lavaanim=0;
 al_draw_bitmap(bitmap_ally, ally.x, ally.y, 0);
 al_draw_bitmap(bitmap_enemy, enemy.x, enemy.y, 0);
 

@@ -30,4 +30,6 @@ else//If drivers are installed.
     }
 }
 
+cursor = al_create_mouse_cursor(bitmap_crosshair, 0, 0);
+
 #endif // IODEVICES_H_INCLUDED

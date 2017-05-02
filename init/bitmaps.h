@@ -33,6 +33,36 @@ if(!bitmap_terrain_path01)
 if(DEBUG) cout<<"\n  Loading \"data/terrain/water.png\"";
 bitmap_terrain_water01 = al_load_bitmap("data/terrain/water.png");
 if(!bitmap_terrain_water01)
-    ExitGame("Failed to load \"data/water.png\"");
+    ExitGame("Failed to load \"data/terrain/water.png\"");
+
+if(DEBUG) cout<<"\n  Loading \"data/textures/ammo.png\"";
+bitmap_icon_ammo01 = al_load_bitmap("data/textures/ammo.png");
+if(!bitmap_icon_ammo01)
+    ExitGame("Failed to load \"data/textures/ammo.png\"");
+
+if(DEBUG) cout<<"\n  Loading \"data/textures/weapon.png\"";
+bitmap_icon_weapon01 = al_load_bitmap("data/textures/weapon.png");
+if(!bitmap_icon_weapon01)
+    ExitGame("Failed to load \"data/textures/weapon.png\"");
+
+if(DEBUG) cout<<"\n  Loading \"data/terrain/lava/*.png\"";
+short int temp=10001;
+for(short int i=0; i<45; i++)
+{
+    stringstream tempstr;
+    tempstr<<"data/terrain/lava/"<<temp<<".png";
+    bitmap_terrain_lava[i] = al_load_bitmap(tempstr.str().c_str());
+    tempstr.str("");
+    tempstr<<"Failed to load \"data/terrain/lava/"<<temp<<".png\"";
+    if(!bitmap_terrain_lava[i])
+        ExitGame(tempstr.str().c_str());
+    tempstr.str("");
+    temp++;
+}
+
+if(DEBUG) cout<<"\n  Loading \"data/textures/crosshair.png\"";
+bitmap_crosshair = al_load_bitmap("data/textures/crosshair.png");
+if(!bitmap_crosshair)
+    ExitGame("Failed to load \"data/textures/crosshair.png\"");
 
 #endif // BITMAPS_H_INCLUDED

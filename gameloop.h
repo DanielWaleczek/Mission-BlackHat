@@ -27,6 +27,9 @@ void GameLoop()
 //    xml_document<> doc;
 #include "gameloop/xml.h"
 
+    short int lavaanim=0;
+    al_set_mouse_cursor(display, cursor);
+
     while(!Exit)
     {
         while(al_get_next_event(event_queue, &event))

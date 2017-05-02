@@ -97,10 +97,15 @@ ALLEGRO_BITMAP *bitmap_ally;
 ALLEGRO_BITMAP *bitmap_player;
 ALLEGRO_BITMAP *bitmap_enemy;
 ALLEGRO_BITMAP *bitmap_temp;
+ALLEGRO_BITMAP *bitmap_crosshair;
 
 ALLEGRO_BITMAP *bitmap_terrain_grass01;
 ALLEGRO_BITMAP *bitmap_terrain_path01;
 ALLEGRO_BITMAP *bitmap_terrain_water01;
+ALLEGRO_BITMAP *bitmap_terrain_lava[45];
+
+ALLEGRO_BITMAP *bitmap_icon_ammo01;
+ALLEGRO_BITMAP *bitmap_icon_weapon01;
 //SPRITES
 //!ALLEGRO_BITMAP *anim_walk[10];
 
@@ -117,14 +122,22 @@ ALLEGRO_TIMER *timer_timer;//Main timer
 //FONTS
 ALLEGRO_FONT *font_courier_new16;//Name and size in px
 ALLEGRO_FONT *font_courier_new32;
+ALLEGRO_FONT *font_courier_new64;//Name and size in px
+ALLEGRO_FONT *font_courier_new128;
+ALLEGRO_FONT *font_courier_new256;
 ALLEGRO_FONT *font_courier_regular16;
 ALLEGRO_FONT *font_courier_regular32;
+ALLEGRO_FONT *font_courier_regular64;
+ALLEGRO_FONT *font_courier_regular128;
+ALLEGRO_FONT *font_courier_regular256;
 
 //INPUT DEVICES
 ALLEGRO_KEYBOARD_STATE keyboard_state;//This is a structure that is used to hold a "snapshot" of a keyboard's state at a particular instant.
 ALLEGRO_JOYSTICK *joystick;//This is an abstract data type representing a physical joystick.
 ALLEGRO_JOYSTICK_STATE joystick_state;//This is a structure that is used to hold a "snapshot" of a joystick's axes and buttons at a particular instant.
 ALLEGRO_MOUSE_STATE mouse_state;
+
+ALLEGRO_MOUSE_CURSOR *cursor;
 
 //MUSIC
 //Samples are destroyed after creating instances (To release the RAM)

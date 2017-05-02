@@ -1,7 +1,7 @@
 #ifndef MAPCONTROLL_H_INCLUDED
 #define MAPCONTROLL_H_INCLUDED
 
-void drawmap(Player *TempPlayer, character *TempCharacter)
+void drawmap(Player *TempPlayer, character *TempCharacter, short int lavaframe)
 {
     for(short int x=0; x<100; x++)
     {
@@ -19,6 +19,7 @@ void drawmap(Player *TempPlayer, character *TempCharacter)
                 break;
             case 3:
                 #include "collisions.h"
+                al_draw_scaled_bitmap(bitmap_terrain_lava[lavaframe], 0, 0, 32, 32, x*BlockSize, y*BlockSize, 64, 64, 0);
                 //al_draw_bitmap(bitmap_terrain_water01, x*BlockSize, y*BlockSize, 0);
                 break;
             case 4:
@@ -26,7 +27,7 @@ void drawmap(Player *TempPlayer, character *TempCharacter)
                 break;
             default:
                 //#include "collisions.h"
-                al_draw_filled_rectangle(x*BlockSize, y*BlockSize, x*BlockSize+BlockSize, y *BlockSize+BlockSize, rgbBlack);
+                //al_draw_filled_rectangle(x*BlockSize, y*BlockSize, x*BlockSize+BlockSize, y *BlockSize+BlockSize, rgbBlack);
                 break;
             }
         }

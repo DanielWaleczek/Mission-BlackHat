@@ -17,6 +17,11 @@ player1.playermodelWidth = al_get_bitmap_width(bitmap_player);
 player1.playermodelHeight = al_get_bitmap_height(bitmap_player);
 player1.HP          = 100;
 
+//!Player1 Gun
+player1.GunAmmo=21;
+player1.GunMagAmmo=7;
+player1.GunMagMaxAmmo=7;
+
 //!PLAYER2
 //if(Multiplayer)
 //{
