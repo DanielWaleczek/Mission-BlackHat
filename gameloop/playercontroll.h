@@ -36,6 +36,8 @@ void playercontroll(Player *PlayerTemp)
     else if(PlayerTemp->y>960)
         PlayerTemp->y-=PlayerTemp->speed;
 
+
+
 }
 
 #endif // PLAYERCONTROLL_H_INCLUDED

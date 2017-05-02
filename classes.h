@@ -39,13 +39,16 @@ public:
 class bullet
 {
 public:
+    bool active=0;
     float x;
     float y;
-    float speed=0.0;
+    float speed=15;
     float tx;
     float ty;
-    string name;
-
+    float mx;//x1-x2
+    float my;//y1-y2
+    float sx;//source x
+    float sy;//source y
 };
 
 class mmap

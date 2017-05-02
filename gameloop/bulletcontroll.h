@@ -3,38 +3,25 @@
 
 //!VIP
 
-void bulletcontroll(Player *PlayerTemp, bullet *BulletTemp)
+void drawBullets(Player *PlayerTemp)
 {
-    if(PlayerTemp->shot)
+    for(short int i=0; i<10; i++)
+        if(bullets[i].active)
+            al_draw_filled_rectangle(bullets[i].x, bullets[i].y, bullets[i].x+8, bullets[i].y+8, rgbRed);
+}
+
+void bulletcontroll(Player *PlayerTemp)
+{
+    for(short int i=0; i<10; i++)
+    if(bullets[i].active)
     {
-        BulletTemp->speed=100;
-        //!BULLET DIRECTION
-        if(MouseX<PlayerTemp->x && MouseY<PlayerTemp->y)//TOP LEFT
-        {
-            BulletTemp->tx=PlayerTemp->x-MouseX+ScreenX1;
-            BulletTemp->ty=PlayerTemp->y-MouseY+ScreenY1;
-        }
-        else if(MouseX>PlayerTemp->x && MouseY<PlayerTemp->y)//TOP RIGHT
-        {
-            BulletTemp->tx=PlayerTemp->x+MouseX+ScreenX1;
-            BulletTemp->ty=PlayerTemp->y-MouseY+ScreenY1;
-        }
-        else if(MouseX<PlayerTemp->x && MouseY>PlayerTemp->y)//BOTTOM LEFT
-        {
-            BulletTemp->tx=PlayerTemp->x-MouseX+ScreenX1;
-            BulletTemp->ty=PlayerTemp->y+MouseY+ScreenY1;
-        }
-        else if(MouseX>PlayerTemp->x && MouseY>PlayerTemp->y)//BOTTOM RIGHT
-        {
-            BulletTemp->tx=PlayerTemp->x+MouseX+ScreenX1;
-            BulletTemp->ty=PlayerTemp->y+MouseY+ScreenY1;
-        }
-        BulletTemp->x=PlayerTemp->x;
-        BulletTemp->y=PlayerTemp->y;
+        bullets[i].x+=(bullets[i].tx-bullets[i].sx)/10;
+        bullets[i].y+=(bullets[i].ty-bullets[i].sy)/10;
+
+
     }
 
-    if(BulletTemp->x == BulletTemp->tx || BulletTemp->y == BulletTemp->ty)
-        BulletTemp->speed=0;
+
 
 }
 
