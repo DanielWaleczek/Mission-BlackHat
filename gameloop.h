@@ -19,7 +19,7 @@ void GameLoop()
     al_flip_display();
 
     al_start_timer(timer_timer);
-    al_start_timer(timer_animtimer);
+    al_start_timer(timer_longtimer);
 
 //    cout<<"\nLoading map...";
 //    mmap TestMap;
@@ -28,6 +28,7 @@ void GameLoop()
 //#include "gameloop/xml.h"
 
     short int lavaanim=0;
+    short int lavaanimnextframe=0;
     al_set_mouse_cursor(display, cursor);
 
     while(!Exit)

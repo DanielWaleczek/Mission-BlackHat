@@ -15,7 +15,7 @@ void drawmap(Player *TempPlayer, character *TempCharacter, short int lavaframe)
                 al_draw_bitmap(bitmap_terrain_path01, x*BlockSize, y*BlockSize, 0);
                 break;
             case 2:
-                al_draw_bitmap(bitmap_terrain_grass01, x*BlockSize, y*BlockSize, 0);
+                al_draw_bitmap(bitmap_terrain_lavaland, x*BlockSize, y*BlockSize, 0);
                 break;
             case 3:
                 #include "collisions.h"

@@ -65,4 +65,9 @@ bitmap_crosshair = al_load_bitmap("data/textures/crosshair.png");
 if(!bitmap_crosshair)
     ExitGame("Failed to load \"data/textures/crosshair.png\"");
 
+if(DEBUG) cout<<"\n  Loading \"data/terrain/lavaland.png\"";
+bitmap_terrain_lavaland = al_load_bitmap("data/terrain/lavaland.png");
+if(!bitmap_terrain_lavaland)
+    ExitGame("Failed to load \"data/terrain/lavaland.png\"");
+
 #endif // BITMAPS_H_INCLUDED
