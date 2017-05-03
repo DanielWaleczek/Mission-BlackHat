@@ -35,6 +35,8 @@ bool KeyboardInstalled      = false;//true if the keyboard is successfully insta
 bool JoystickInstalled      = false;//true if the joystick is successfully installed
 short int MouseX            = 0;//mouse X position in pixels
 short int MouseY            = 0;//mouse Y position in pixels
+short int StaticMouseX      = 0;//static pos of mouse
+short int StaticMouseY      = 0;//static pos of mouse
 
 //ADDITIONAL FEATURES IN THE GAME
 bool Multiplayer            = 0;//if true then game is in Multiplayer mode
@@ -146,6 +148,8 @@ ALLEGRO_MOUSE_CURSOR *cursor;
 
 //SOUNDS
 //Samples are destroyed after creating instances (To release the RAM)
+ALLEGRO_SAMPLE *sample_sigsauer_gunshot;
+ALLEGRO_SAMPLE *sample_sigsauer_outofammo;
 
 //AUDIO MIXERS
 //A mixer is a type of stream which mixes together attached streams into a single buffer.

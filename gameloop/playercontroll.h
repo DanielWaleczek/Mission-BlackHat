@@ -21,7 +21,7 @@ void playercontroll(Player *PlayerTemp)
     //!PLAYER ANGLE UPDATE
     //if(MouseX>PlayerTemp->x && MouseY<PlayerTemp->y)//top right
     //{
-    PlayerTemp->angle=atan2(MouseY-ScreenHeight/2, MouseX-ScreenWidth/2);
+    PlayerTemp->angle=atan2(StaticMouseY-ScreenHeight/2, StaticMouseX-ScreenWidth/2);
     //cout<<endl<<PlayerTemp->angle<<"     "<<MouseX<<"    "<<MouseY;
     //al_rest(0.01);
     //}
@@ -35,6 +35,14 @@ void playercontroll(Player *PlayerTemp)
         PlayerTemp->y+=PlayerTemp->speed;
     else if(PlayerTemp->y>960)
         PlayerTemp->y-=PlayerTemp->speed;
+
+
+    //!Reloading
+    if(PlayerTemp->reloading)
+    {
+        gunReload(PlayerTemp);
+        PlayerTemp->reloading=false;
+    }
 
 
 

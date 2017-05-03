@@ -21,6 +21,7 @@ public:
     short int GunMagMaxAmmo;
     short int GunMagAmmo;
     short int GunAmmo;
+    bool reloading=0;
 
 };
 

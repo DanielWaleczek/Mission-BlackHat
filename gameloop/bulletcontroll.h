@@ -3,21 +3,43 @@
 
 //!VIP
 
+void gunReload(Player *PlayerTemp)
+{
+
+    if(PlayerTemp->GunAmmo>PlayerTemp->GunMagMaxAmmo)
+    {
+        PlayerTemp->GunMagAmmo=PlayerTemp->GunMagMaxAmmo;
+        //PlayerTemp->GunAmmo-=PlayerTemp->GunMagMaxAmmo;
+    }
+    //else
+    //{
+    //    PlayerTemp->GunMagAmmo=PlayerTemp->GunAmmo;
+    //    PlayerTemp->GunAmmo-=PlayerTemp->GunMagAmmo;
+    //}
+
+}
+
 void drawBullets(Player *PlayerTemp)
 {
-    for(short int i=0; i<10; i++)
+    for(short int i=0; i<100; i++)
         if(bullets[i].active)
             al_draw_filled_rectangle(bullets[i].x, bullets[i].y, bullets[i].x+8, bullets[i].y+8, rgbRed);
 }
 
 void bulletcontroll(Player *PlayerTemp)
 {
-    for(short int i=0; i<10; i++)
+    for(short int i=0; i<100; i++)
     if(bullets[i].active)
     {
-        bullets[i].x+=(bullets[i].tx-bullets[i].sx)/10;
-        bullets[i].y+=(bullets[i].ty-bullets[i].sy)/10;
+        //bullets[i].x+=(bullets[i].tx-bullets[i].sx)/100;
+        //cout<<endl<<bullets[i].tx<<" - "<<bullets[i].sx<<" /100 = "<<(bullets[i].tx-bullets[i].sx)/100;
+        //bullets[i].y+=(bullets[i].ty-bullets[i].sy)/100;
+        bullets[i].x+=15+(bullets[i].tx-bullets[i].sx)/10;
+        bullets[i].y+=15+(bullets[i].ty-bullets[i].sy)/10;
 
+
+        ///if(bullets[i].x>=bullets[i].tx || bullets[i].y>=bullets[i].ty)
+            //bullets[i].active=false;
 
     }
 

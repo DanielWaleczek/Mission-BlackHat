@@ -2,7 +2,7 @@
 #define GAMELOOP_H_INCLUDED
 //Here will be main game loop
 //!Globals
-bullet bullets[10];
+bullet bullets[100];
 
 #include "gameloop/hud.h"
 #include "gameloop/allycontroll.h"
@@ -12,8 +12,6 @@ bullet bullets[10];
 
 void GameLoop()
 {
-    cout<<endl<<"BOF gameloop.h";
-
     #include "classescreator.h"
 
     bool draw=1, Exit=0;
@@ -37,27 +35,30 @@ void GameLoop()
         while(al_get_next_event(event_queue, &event))
         {
             if(event.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN)
-                for(short int i=0; i<10; i++)
+                for(short int i=0; i<100; i++)
                     if(!bullets[i].active)
                         if(player1.GunMagAmmo>0)
                         {
                             bullets[i].active=true;
                             bullets[i].x=player1.x; bullets[i].y=player1.y;
                             bullets[i].tx=MouseX; bullets[i].ty=MouseY;
-                            cout<<endl<<MouseX<<" "<<MouseY;
                             bullets[i].mx=player1.x-bullets[i].x; bullets[i].my=player1.y-bullets[i].y;
                             bullets[i].sx=player1.x; bullets[i].sy=player1.y;
-                            cout<<endl<<bullets[i].mx<<" "<<bullets[i].my;
                             player1.GunMagAmmo--;
-                            i=11;
+                            al_play_sample(sample_sigsauer_gunshot, 2.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
+                            i=110;
+                        }
+                        else
+                        {
+                            al_play_sample(sample_sigsauer_outofammo, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
                         }
             switch(event.type)
             {
             case ALLEGRO_EVENT_TIMER:
                 //!MOUSE
                 al_get_mouse_state(&mouse_state);
-                MouseX = mouse_state.x+ScreenX1;
-                MouseY = mouse_state.y+ScreenY1;
+                MouseX = mouse_state.x+ScreenX1; StaticMouseX=mouse_state.x;
+                MouseY = mouse_state.y+ScreenY1; StaticMouseY=mouse_state.y;
                 //!KEYBOARD KEYS
 #include "gameloop/keyboard.h"
                 break;
