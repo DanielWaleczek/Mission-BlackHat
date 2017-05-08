@@ -9,8 +9,8 @@
 #include <math.h>
 //Creating one string from two others
 #include <sstream>
-#include <rapidxml/rapidxml.hpp>
-#include <rapidxml/rapidxml_print.hpp>
+//#include <rapidxml/rapidxml.hpp>
+//#include <rapidxml/rapidxml_print.hpp>
 
 #include <fstream>
 #include <windows.h>
@@ -28,12 +28,13 @@
 bool DEBUG=false;
 
 using namespace std;
-using namespace rapidxml;
+//using namespace rapidxml;
 
 //!OTHER FILES
+#include "colors.h"
 #include "globals.h"
 #include "classes.h"
-#include "colors.h"
+
 
 #include "exitgame.h"
 //Game loop
@@ -64,9 +65,6 @@ int main()
     cout<<"\n\nLoading Mission: BlackHat...";
     cmdGray
 #include "init.h"  //Loading module
-
-
-    cout<<"\nDAWDWAWWD";
 
     MainMenu();
 

@@ -65,4 +65,21 @@ public:
     string TileSource[1000];//sourcep[number]
     short int Map[1000][1000];//number[x][y]
 };
+
+class MenuObj
+{
+public:
+    short int x1=ScreenWidth/2-250;
+    short int y1;
+    short int x2=ScreenWidth/2+250;
+    short int y2;
+    ALLEGRO_COLOR color=rgbWhite;
+
+    ALLEGRO_COLOR textcolor=rgbBlack;
+    const char* text;
+
+    bool active=false;
+
+
+};
 #endif // CLASSES_H_INCLUDED

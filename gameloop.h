@@ -31,7 +31,7 @@ void GameLoop()
     short int lavaanimnextframe=0;
     al_set_mouse_cursor(display, cursor);
 
-    while(!Exit)
+    while(1)
     {
         while(al_get_next_event(event_queue, &event))
         {

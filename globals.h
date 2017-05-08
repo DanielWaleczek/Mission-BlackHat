@@ -100,6 +100,7 @@ ALLEGRO_BITMAP *bitmap_player;
 ALLEGRO_BITMAP *bitmap_enemy;
 ALLEGRO_BITMAP *bitmap_temp;
 ALLEGRO_BITMAP *bitmap_crosshair;
+ALLEGRO_BITMAP *bitmap_crosshairbg;
 
 ALLEGRO_BITMAP *bitmap_terrain_grass01;
 ALLEGRO_BITMAP *bitmap_terrain_path01;
@@ -177,5 +178,6 @@ ALLEGRO_CONFIG *flocale;//Locale
 /////////////////////
 //!////FUNCTIONS/////
 /////////////////////
+int MainMenu();
 
 #endif // GLOBALS_H_INCLUDED

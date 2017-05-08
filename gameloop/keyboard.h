@@ -6,7 +6,12 @@ if(event.timer.source == timer_timer)
     al_get_keyboard_state(&keyboard_state);
 
     if(al_key_down(&keyboard_state, ALLEGRO_KEY_ESCAPE))
-        Exit=true;
+    {
+        al_identity_transform(&camera);
+        al_translate_transform(&camera, 0, 0);
+        al_use_transform(&camera);
+        MainMenu();
+    }
     else if(al_key_down(&keyboard_state, ALLEGRO_KEY_F))
         ally.following = !ally.following;
     /*else if(al_key_down(&keyboard_state, ALLEGRO_KEY_W) && al_key_down(&keyboard_state, ALLEGRO_KEY_A))
