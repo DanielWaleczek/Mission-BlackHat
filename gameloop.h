@@ -35,24 +35,7 @@ void GameLoop()
     {
         while(al_get_next_event(event_queue, &event))
         {
-            if(event.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN)
-                for(short int i=0; i<100; i++)
-                    if(!bullets[i].active)
-                        if(player1.GunMagAmmo>0)
-                        {
-                            bullets[i].active=true;
-                            bullets[i].x=player1.x; bullets[i].y=player1.y;
-                            bullets[i].tx=MouseX; bullets[i].ty=MouseY;
-                            bullets[i].mx=player1.x-bullets[i].x; bullets[i].my=player1.y-bullets[i].y;
-                            bullets[i].sx=player1.x; bullets[i].sy=player1.y;
-                            player1.GunMagAmmo--;
-                            al_play_sample(sample_sigsauer_gunshot, 2.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
-                            i=110;
-                        }
-                        else
-                        {
-                            al_play_sample(sample_sigsauer_outofammo, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
-                        }
+
             switch(event.type)
             {
             case ALLEGRO_EVENT_TIMER:
@@ -71,11 +54,30 @@ void GameLoop()
 
             //!Camera Control
             ScreenX1 = player1.x-ScreenWidth/2;
+            cmdRed cout<<endl<<ScreenX1; cmdGray
             ScreenX2 = player1.x+ScreenWidth/2;
-            ScreenY1 = player1.x-ScreenHeight/2;
-            ScreenY2 = player1.x+ScreenHeight/2;
+            ScreenY1 = player1.y-ScreenHeight/2;
+            ScreenY2 = player1.y+ScreenHeight/2;
 
             //!WIP
+            if(event.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN)
+                for(short int i=0; i<100; i++)
+                    if(!bullets[i].active)
+                        if(player1.GunMagAmmo>0)
+                        {
+                            bullets[i].active=true;
+                            bullets[i].x=player1.x; bullets[i].y=player1.y;
+                            bullets[i].tx=MouseX; bullets[i].ty=MouseY;
+                            bullets[i].mx=player1.x-bullets[i].x; bullets[i].my=player1.y-bullets[i].y;
+                            bullets[i].sx=player1.x; bullets[i].sy=player1.y;
+                            player1.GunMagAmmo--;
+                            al_play_sample(sample_sigsauer_gunshot, 2.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
+                            i=110;
+                        }
+                        else
+                        {
+                            al_play_sample(sample_sigsauer_outofammo, 1.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
+                        }
 
             draw=1;
         }//-!while(al_get_next_event())

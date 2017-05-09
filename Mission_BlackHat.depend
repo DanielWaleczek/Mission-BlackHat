@@ -92,7 +92,7 @@
 
 1493801398 a:\mission_blackhat\gameloop\hud.h
 
-1494246233 source:c:\users\praktykant\appdata\local\mission_blackhat\main.cpp
+1494325136 source:c:\users\praktykant\appdata\local\mission_blackhat\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string>
@@ -127,7 +127,7 @@
 
 1494243809 c:\users\praktykant\appdata\local\mission_blackhat\exitgame.h
 
-1494248068 c:\users\praktykant\appdata\local\mission_blackhat\gameloop.h
+1494251569 c:\users\praktykant\appdata\local\mission_blackhat\gameloop.h
 	"gameloop/hud.h"
 	"gameloop/allycontroll.h"
 	"gameloop/bulletcontroll.h"
@@ -141,22 +141,22 @@
 
 1494243810 c:\users\praktykant\appdata\local\mission_blackhat\gameloop\allycontroll.h
 
-1494243810 c:\users\praktykant\appdata\local\mission_blackhat\gameloop\bulletcontroll.h
+1494250619 c:\users\praktykant\appdata\local\mission_blackhat\gameloop\bulletcontroll.h
 
-1494243810 c:\users\praktykant\appdata\local\mission_blackhat\gameloop\playercontroll.h
+1494249488 c:\users\praktykant\appdata\local\mission_blackhat\gameloop\playercontroll.h
 
 1494243810 c:\users\praktykant\appdata\local\mission_blackhat\gameloop\mapcontroll.h
 	"collisions.h"
 
 1494243810 c:\users\praktykant\appdata\local\mission_blackhat\gameloop\collisions.h
 
-1494243809 c:\users\praktykant\appdata\local\mission_blackhat\classescreator.h
+1494249050 c:\users\praktykant\appdata\local\mission_blackhat\classescreator.h
 
 1494248294 c:\users\praktykant\appdata\local\mission_blackhat\gameloop\keyboard.h
 
 1494243810 c:\users\praktykant\appdata\local\mission_blackhat\gameloop\drawing.h
 
-1494248178 c:\users\praktykant\appdata\local\mission_blackhat\mainmenu.h
+1494326374 c:\users\praktykant\appdata\local\mission_blackhat\mainmenu.h
 	"mainmenu/classescreator.h"
 
 1494243809 c:\users\praktykant\appdata\local\mission_blackhat\init.h
@@ -183,4 +183,96 @@
 1494243810 c:\users\praktykant\appdata\local\mission_blackhat\init\timers.h
 
 1494247327 c:\users\praktykant\appdata\local\mission_blackhat\mainmenu\classescreator.h
+
+1494325136 source:c:\users\praktykant\appdata\local\mission-blackhat\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	<math.h>
+	<sstream>
+	<fstream>
+	<windows.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_color.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_video.h>
+	"colors.h"
+	"globals.h"
+	"classes.h"
+	"exitgame.h"
+	"gameloop.h"
+	"gameloop.h"
+	"mainmenu.h"
+	"init.h"
+
+1494243809 c:\users\praktykant\appdata\local\mission-blackhat\colors.h
+
+1494248101 c:\users\praktykant\appdata\local\mission-blackhat\globals.h
+
+1494247417 c:\users\praktykant\appdata\local\mission-blackhat\classes.h
+
+1494243809 c:\users\praktykant\appdata\local\mission-blackhat\exitgame.h
+
+1494251569 c:\users\praktykant\appdata\local\mission-blackhat\gameloop.h
+	"gameloop/hud.h"
+	"gameloop/allycontroll.h"
+	"gameloop/bulletcontroll.h"
+	"gameloop/playercontroll.h"
+	"gameloop/mapcontroll.h"
+	"classescreator.h"
+	"gameloop/keyboard.h"
+	"gameloop/drawing.h"
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\gameloop\hud.h
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\gameloop\allycontroll.h
+
+1494250619 c:\users\praktykant\appdata\local\mission-blackhat\gameloop\bulletcontroll.h
+
+1494249488 c:\users\praktykant\appdata\local\mission-blackhat\gameloop\playercontroll.h
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\gameloop\mapcontroll.h
+	"collisions.h"
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\gameloop\collisions.h
+
+1494249050 c:\users\praktykant\appdata\local\mission-blackhat\classescreator.h
+
+1494248294 c:\users\praktykant\appdata\local\mission-blackhat\gameloop\keyboard.h
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\gameloop\drawing.h
+
+1494326926 c:\users\praktykant\appdata\local\mission-blackhat\mainmenu.h
+	"mainmenu/classescreator.h"
+
+1494247327 c:\users\praktykant\appdata\local\mission-blackhat\mainmenu\classescreator.h
+
+1494243809 c:\users\praktykant\appdata\local\mission-blackhat\init.h
+	"init/allegro.h"
+	"init/fonts.h"
+	"init/display.h"
+	"init/audio.h"
+	"init/bitmaps.h"
+	"init/iodevices.h"
+	"init/timers.h"
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\init\allegro.h
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\init\fonts.h
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\init\display.h
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\init\audio.h
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\init\bitmaps.h
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\init\iodevices.h
+
+1494243810 c:\users\praktykant\appdata\local\mission-blackhat\init\timers.h
 

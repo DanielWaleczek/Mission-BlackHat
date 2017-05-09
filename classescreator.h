@@ -7,9 +7,9 @@ Player player1;
 player1.character   = Player1CharacterName;
 player1.name        = Player1Name;
 player1.speed       = 5.0;
-player1.x           = 255.0;
-player1.y           = 255.0;
-player1.angle       = 0;
+player1.x           = rand()%255+64;
+player1.y           = rand()%255+64;
+player1.angle       = rand()%255;
 player1.CameraPosition[0] = player1.x;
 player1.CameraPosition[1] = player1.y;
 player1.shot = false;
@@ -38,16 +38,16 @@ enemy.character = "data/enemy.png";
 enemy.enemy = true;
 enemy.name = "TestEnemy";
 enemy.speed = 5.0;
-enemy.x = 400;
-enemy.y = 492;
+enemy.x = rand()%400+64;
+enemy.y = rand()%492+64;
 
 character ally;
 ally.character = "data/ally.png";
 ally.enemy = false;
-ally.following = true;
+ally.following = false;
 ally.name = "TestAlly";
 ally.speed = 5.0;
-ally.x = 543;
-ally.y = 312;
+ally.x = rand()%543+64;
+ally.y = rand()%312+64;
 
 #endif // CLASSESCREATOR_H_INCLUDED

@@ -3,15 +3,29 @@
 
 void playercontroll(Player *PlayerTemp)
 {
+    //Camera will follow the player
+    PlayerTemp->CameraPosition[0] = -(ScreenWidth/2) + (PlayerTemp->x+32/2);
+    PlayerTemp->CameraPosition[1] = -(ScreenHeight/2) + (PlayerTemp->y+32/2);
+
     if(PlayerTemp->HP>100)
         PlayerTemp->HP=100;
     if(PlayerTemp->HP<=0)
     {
+        PlayerTemp->x=128;
+        PlayerTemp->y=128;
+
+        al_identity_transform(&camera);
+        al_translate_transform(&camera, 0, 0);
+        al_use_transform(&camera);
+
         PlayerTemp->HP=0;
+        al_clear_to_color(rgbBlack);
+        al_draw_text(font_courier_new128, rgbRed, ScreenWidth/2, ScreenHeight/2, ALLEGRO_ALIGN_CENTER, "You're dead!");
+        al_flip_display();
+
+        al_rest(3);
+        MainMenu();
     }
-    //Camera will follow the player
-    PlayerTemp->CameraPosition[0] = -(ScreenWidth/2) + (PlayerTemp->x+32/2);
-    PlayerTemp->CameraPosition[1] = -(ScreenHeight/2) + (PlayerTemp->y+32/2);
 
     //Use transform to center camera on player
     al_identity_transform(&camera);

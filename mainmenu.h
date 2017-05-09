@@ -7,11 +7,15 @@ void CreateMainMenuObj(MenuObj *TempObj)
 
     al_draw_text(font_courier_new32, rgbRed, ScreenWidth/2, 20, ALLEGRO_ALIGN_CENTER, "Prototype version! MM v.0.0.1");
 
+    al_draw_elliptical_arc(100, 100, 332, 332, 32, -322, rgbWhite, 5);
+    al_draw_elliptical_arc(100, 100, 332, 332, 32, -322, rgbSilver, 4);
+
     //!New Game button
     if(TempObj->active)
         al_draw_filled_rectangle(TempObj->x1, TempObj->y1, TempObj->x2, TempObj->y2, rgbSilver);
     else
         al_draw_filled_rectangle(TempObj->x1, TempObj->y1, TempObj->x2, TempObj->y2, TempObj->color);
+    al_draw_rectangle(TempObj->x1, TempObj->y1, TempObj->x2, TempObj->y2, rgbSilver, 5);
     al_draw_text(font_courier_new64, TempObj->textcolor, ScreenWidth/2, TempObj->y1-8, ALLEGRO_ALIGN_CENTER, TempObj->text);
 
 
