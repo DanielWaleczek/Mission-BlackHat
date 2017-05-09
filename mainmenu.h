@@ -29,6 +29,7 @@ int MainMenu()
     {
         while(al_get_next_event(event_queue, &event))
         {
+            short int mousex=event.mouse.x; short int mousey=event.mouse.y;
             if(event.type == ALLEGRO_EVENT_KEY_DOWN)
             {
                 if(event.keyboard.keycode==ALLEGRO_KEY_ESCAPE)
@@ -45,6 +46,21 @@ int MainMenu()
                 else if(event.keyboard.keycode==ALLEGRO_KEY_UP)
                     activeid--;
             }
+            else if(event.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN)
+            {
+                if(mousex>Button_NewGame.x1-5 && mousex<Button_NewGame.x2+5 && mousey>Button_NewGame.y1-5 && mousey<Button_NewGame.y2+5)
+                    if(event.mouse.button & 1)
+                        GameLoop();
+                else if(mousex>Button_LoadGame.x1-5 && mousex<Button_LoadGame.x2+5 && mousey>Button_LoadGame.y1-5 && mousey<Button_LoadGame.y2+5)
+                    activeid=1;
+                else if(mousex>Button_Options.x1-5 && mousex<Button_Options.x2+5 && mousey>Button_Options.y1-5 && mousey<Button_Options.y2+5)
+                    activeid=2;
+                else if(mousex>Button_Credits.x1-5 && mousex<Button_Credits.x2+5 && mousey>Button_Credits.y1-5 && mousey<Button_Credits.y2+5)
+                    activeid=3;
+                else if(mousex>Button_ExitGame.x1-5 && mousex<Button_ExitGame.x2+5 && mousey>Button_ExitGame.y1-5 && mousey<Button_ExitGame.y2+5)
+                    if(event.mouse.button & 1)
+                        ExitGame();
+            }
 
             if(activeid<0)
                 activeid=0;
@@ -57,18 +73,16 @@ int MainMenu()
             Button_Credits.active=0;
             Button_ExitGame.active=0;
 
-            short int mousex=event.mouse.x; short int mousey=event.mouse.y;
-
-//            if(mousex>Button_NewGame.x1 && mousex<Button_NewGame.x2 && mousey>Button_NewGame.y1 && mousey<Button_NewGame.y2)
-//                activeid=0;
-//            else if(mousex>Button_LoadGame.x1 && mousex<Button_LoadGame.x2 && mousey>Button_LoadGame.y1 && mousey<Button_LoadGame.y2)
-//                activeid=1;
-//            else if(mousex>Button_Options.x1 && mousex<Button_Options.x2 && mousey>Button_Options.y1 && mousey<Button_Options.y2)
-//                activeid=2;
-//            else if(mousex>Button_Credits.x1 && mousex<Button_Credits.x2 && mousey>Button_Credits.y1 && mousey<Button_Credits.y2)
-//                activeid=3;
-//            else if(mousex>Button_ExitGame.x1 && mousex<Button_ExitGame.x2 && mousey>Button_ExitGame.y1 && mousey<Button_ExitGame.y2)
-//                activeid=4;
+            if(mousex>Button_NewGame.x1-5 && mousex<Button_NewGame.x2+5 && mousey>Button_NewGame.y1-5 && mousey<Button_NewGame.y2+5)
+                activeid=0;
+            else if(mousex>Button_LoadGame.x1-5 && mousex<Button_LoadGame.x2+5 && mousey>Button_LoadGame.y1-5 && mousey<Button_LoadGame.y2+5)
+                activeid=1;
+            else if(mousex>Button_Options.x1-5 && mousex<Button_Options.x2+5 && mousey>Button_Options.y1-5 && mousey<Button_Options.y2+5)
+                activeid=2;
+            else if(mousex>Button_Credits.x1-5 && mousex<Button_Credits.x2+5 && mousey>Button_Credits.y1-5 && mousey<Button_Credits.y2+5)
+                activeid=3;
+            else if(mousex>Button_ExitGame.x1-5 && mousex<Button_ExitGame.x2+5 && mousey>Button_ExitGame.y1-5 && mousey<Button_ExitGame.y2+5)
+                activeid=4;
 
 
             if(activeid==0)

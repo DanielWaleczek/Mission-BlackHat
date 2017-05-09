@@ -58,7 +58,7 @@ int main()
         cout<<"\a";
         Beep(1240, 100);
         cout<<"Debug mode activated!";
-        al_rest(3.00);
+        al_rest(2.00);
     }
     cmdWhite
 
