@@ -25,12 +25,12 @@ player1.GunMagMaxAmmo=15;//15bullets + 1
 //!PLAYER2
 //if(Multiplayer)
 //{
- //   Player player2;
-   // player2.character   = Player2CharacterName;
-    //player2.name        = Player2Name;
-    //player2.speed       = 5.0;
-    //player2.x           = 200.0;
-    //player2.y           = 200.0;
+//   Player player2;
+// player2.character   = Player2CharacterName;
+//player2.name        = Player2Name;
+//player2.speed       = 5.0;
+//player2.x           = 200.0;
+//player2.y           = 200.0;
 //}
 
 character enemy;

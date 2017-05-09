@@ -1,7 +1,8 @@
 #ifndef AUDIO_H_INCLUDED
 #define AUDIO_H_INCLUDED
 
-if(DEBUG) cout<<"\n  Reserving samples..";\
+if(DEBUG) cout<<"\n  Reserving samples..";
+\
 if(!al_reserve_samples(10))
     ExitGame("Failed to reserve samples!");
 

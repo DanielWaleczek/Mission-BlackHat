@@ -7,7 +7,8 @@ al_set_new_display_flags(ALLEGRO_FULLSCREEN);
 if(DEBUG) cout<<"\n  Getting display mode...";
 al_get_display_mode(al_get_num_display_modes() - 1, &disp_data);
 
-ScreenWidth = disp_data.width; ScreenHeight = disp_data.height;
+ScreenWidth = disp_data.width;
+ScreenHeight = disp_data.height;
 
 //ScreenWidth=800; ScreenHeight=600;
 

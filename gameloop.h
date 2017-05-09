@@ -12,7 +12,7 @@ bullet bullets[100];
 
 void GameLoop()
 {
-    #include "classescreator.h"
+#include "classescreator.h"
 
     bool draw=1, Exit=0;
     al_clear_to_color(rgbBlack);
@@ -41,8 +41,10 @@ void GameLoop()
             case ALLEGRO_EVENT_TIMER:
                 //!MOUSE
                 al_get_mouse_state(&mouse_state);
-                MouseX = mouse_state.x+ScreenX1; StaticMouseX=mouse_state.x;
-                MouseY = mouse_state.y+ScreenY1; StaticMouseY=mouse_state.y;
+                MouseX = mouse_state.x+ScreenX1;
+                StaticMouseX=mouse_state.x;
+                MouseY = mouse_state.y+ScreenY1;
+                StaticMouseY=mouse_state.y;
                 //!KEYBOARD KEYS
 #include "gameloop/keyboard.h"
                 break;
@@ -54,7 +56,8 @@ void GameLoop()
 
             //!Camera Control
             ScreenX1 = player1.x-ScreenWidth/2;
-            cmdRed cout<<endl<<ScreenX1; cmdGray
+            cmdRed cout<<endl<<ScreenX1;
+            cmdGray
             ScreenX2 = player1.x+ScreenWidth/2;
             ScreenY1 = player1.y-ScreenHeight/2;
             ScreenY2 = player1.y+ScreenHeight/2;
@@ -66,10 +69,14 @@ void GameLoop()
                         if(player1.GunMagAmmo>0)
                         {
                             bullets[i].active=true;
-                            bullets[i].x=player1.x; bullets[i].y=player1.y;
-                            bullets[i].tx=MouseX; bullets[i].ty=MouseY;
-                            bullets[i].mx=player1.x-bullets[i].x; bullets[i].my=player1.y-bullets[i].y;
-                            bullets[i].sx=player1.x; bullets[i].sy=player1.y;
+                            bullets[i].x=player1.x;
+                            bullets[i].y=player1.y;
+                            bullets[i].tx=MouseX;
+                            bullets[i].ty=MouseY;
+                            bullets[i].mx=player1.x-bullets[i].x;
+                            bullets[i].my=player1.y-bullets[i].y;
+                            bullets[i].sx=player1.x;
+                            bullets[i].sy=player1.y;
                             player1.GunMagAmmo--;
                             al_play_sample(sample_sigsauer_gunshot, 2.0, 0.0, 1.0, ALLEGRO_PLAYMODE_ONCE, NULL);
                             i=110;

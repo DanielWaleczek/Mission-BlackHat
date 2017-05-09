@@ -6,18 +6,19 @@
 void gunReload(Player *PlayerTemp)
 {
     if(PlayerTemp->GunMagAmmo!=PlayerTemp->GunMagMaxAmmo)
-    if(PlayerTemp->GunAmmo>PlayerTemp->GunMagMaxAmmo)
-    {
-        while(PlayerTemp->GunMagAmmo!=PlayerTemp->GunMagMaxAmmo)
+        if(PlayerTemp->GunAmmo>PlayerTemp->GunMagMaxAmmo)
         {
-            PlayerTemp->GunMagAmmo++; PlayerTemp->GunAmmo--;
+            while(PlayerTemp->GunMagAmmo!=PlayerTemp->GunMagMaxAmmo)
+            {
+                PlayerTemp->GunMagAmmo++;
+                PlayerTemp->GunAmmo--;
+            }
         }
-    }
-    else
-    {
-        PlayerTemp->GunMagAmmo=PlayerTemp->GunAmmo;
-        PlayerTemp->GunAmmo-=PlayerTemp->GunMagAmmo;
-    }
+        else
+        {
+            PlayerTemp->GunMagAmmo=PlayerTemp->GunAmmo;
+            PlayerTemp->GunAmmo-=PlayerTemp->GunMagAmmo;
+        }
 
 }
 
@@ -31,16 +32,16 @@ void drawBullets(Player *PlayerTemp)
 void bulletcontroll(Player *PlayerTemp)
 {
     for(short int i=0; i<100; i++)
-    if(bullets[i].active)
-    {
-        cout<<endl<<bullets[i].tx<<"  "<<bullets[i].sx<<endl<<bullets[i].ty<<"  "<<bullets[i].sy;
-        bullets[i].x+=(bullets[i].tx+bullets[i].sx)/10;
-        //cout<<endl<<bullets[i].tx<<" - "<<bullets[i].sx<<" /100 = "<<(bullets[i].tx-bullets[i].sx)/100;
-        bullets[i].y+=(bullets[i].ty+bullets[i].sy)/10;
+        if(bullets[i].active)
+        {
+            cout<<endl<<bullets[i].tx<<"  "<<bullets[i].sx<<endl<<bullets[i].ty<<"  "<<bullets[i].sy;
+            bullets[i].x+=(bullets[i].tx+bullets[i].sx)/10;
+            //cout<<endl<<bullets[i].tx<<" - "<<bullets[i].sx<<" /100 = "<<(bullets[i].tx-bullets[i].sx)/100;
+            bullets[i].y+=(bullets[i].ty+bullets[i].sy)/10;
 
-        if(bullets[i].x==bullets[i].tx || bullets[i].y==bullets[i].ty)
-            bullets[i].active=false;
-    }
+            if(bullets[i].x==bullets[i].tx || bullets[i].y==bullets[i].ty)
+                bullets[i].active=false;
+        }
 }
 
 #endif // BULLETCONTROLL_H_INCLUDED

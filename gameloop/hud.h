@@ -5,7 +5,7 @@ void DrawHud(Player *TempPlayer)
 {
     //!Hud Background
     al_draw_rectangle((TempPlayer->x-ScreenWidth/2)+32, TempPlayer->y+ScreenHeight/2-154-16
-                             , (TempPlayer->x-ScreenWidth/2)+64+(100*3)+32+64, TempPlayer->y+ScreenHeight/2, rgbWhite, 12);
+                      , (TempPlayer->x-ScreenWidth/2)+64+(100*3)+32+64, TempPlayer->y+ScreenHeight/2, rgbWhite, 12);
 
     //!Hud Top Background
     al_draw_filled_rectangle(TempPlayer->x-ScreenWidth/2+32, TempPlayer->y+ScreenHeight/2-154-16,
@@ -17,11 +17,11 @@ void DrawHud(Player *TempPlayer)
 
     //!White HP edge
     al_draw_rectangle((TempPlayer->x-ScreenWidth/2)+64, TempPlayer->y+ScreenHeight/2-32
-                             ,(TempPlayer->x-ScreenWidth/2)+64+(100*3), TempPlayer->y+ScreenHeight/2-64, rgbWhite, 12);
+                      ,(TempPlayer->x-ScreenWidth/2)+64+(100*3), TempPlayer->y+ScreenHeight/2-64, rgbWhite, 12);
 
     //!Black HP edge
     al_draw_rectangle((TempPlayer->x-ScreenWidth/2)+64, TempPlayer->y+ScreenHeight/2-32
-                             ,(TempPlayer->x-ScreenWidth/2)+64+(100*3), TempPlayer->y+ScreenHeight/2-64, rgbBlack, 8);
+                      ,(TempPlayer->x-ScreenWidth/2)+64+(100*3), TempPlayer->y+ScreenHeight/2-64, rgbBlack, 8);
 
     //!HP Bar
     al_draw_filled_rectangle((TempPlayer->x-ScreenWidth/2)+64, TempPlayer->y+ScreenHeight/2-32
@@ -31,7 +31,7 @@ void DrawHud(Player *TempPlayer)
     al_draw_bitmap(bitmap_icon_weapon01, TempPlayer->x-ScreenWidth/2+64+16, TempPlayer->y+ScreenHeight/2-154, 0);
 
     //!Ammo Icon
-    al_draw_bitmap(bitmap_icon_ammo01, TempPlayer->x-ScreenWidth/2+128+32 ,TempPlayer->y+ScreenHeight/2-154, 0);
+    al_draw_bitmap(bitmap_icon_ammo01, TempPlayer->x-ScreenWidth/2+128+32,TempPlayer->y+ScreenHeight/2-154, 0);
     if(TempPlayer->HP<=0)
         al_draw_text(font_courier_new32, rgbRed, ScreenWidth/2, ScreenHeight/2, ALLEGRO_ALIGN_CENTER, "Your game IS OVER!");
 

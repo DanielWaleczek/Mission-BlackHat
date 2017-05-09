@@ -9,27 +9,27 @@ void drawmap(Player *TempPlayer, character *TempCharacter, short int lavaframe)
         {
             if(x*64-64<TempPlayer->x+ScreenWidth/2&& x*64+64>TempPlayer->x-ScreenWidth/2&& y*64-64<=TempPlayer->y+ScreenHeight/2 && y*64+64>=TempPlayer->y-ScreenHeight/2)
 
-            switch(Map[y][x])
-            {
-            case 1:
-                al_draw_bitmap(bitmap_terrain_path01, x*BlockSize, y*BlockSize, 0);
-                break;
-            case 2:
-                al_draw_bitmap(bitmap_terrain_lavaland, x*BlockSize, y*BlockSize, 0);
-                break;
-            case 3:
-                #include "collisions.h"
-                al_draw_scaled_bitmap(bitmap_terrain_lava[lavaframe], 0, 0, 32, 32, x*BlockSize, y*BlockSize, 64, 64, 0);
-                //al_draw_bitmap(bitmap_terrain_water01, x*BlockSize, y*BlockSize, 0);
-                break;
-            case 4:
-                al_draw_bitmap(bitmap_terrain_path01, x*BlockSize, y*BlockSize, 0);
-                break;
-            default:
-                //#include "collisions.h"
-                //al_draw_filled_rectangle(x*BlockSize, y*BlockSize, x*BlockSize+BlockSize, y *BlockSize+BlockSize, rgbBlack);
-                break;
-            }
+                switch(Map[y][x])
+                {
+                case 1:
+                    al_draw_bitmap(bitmap_terrain_path01, x*BlockSize, y*BlockSize, 0);
+                    break;
+                case 2:
+                    al_draw_bitmap(bitmap_terrain_lavaland, x*BlockSize, y*BlockSize, 0);
+                    break;
+                case 3:
+#include "collisions.h"
+                    al_draw_scaled_bitmap(bitmap_terrain_lava[lavaframe], 0, 0, 32, 32, x*BlockSize, y*BlockSize, 64, 64, 0);
+                    //al_draw_bitmap(bitmap_terrain_water01, x*BlockSize, y*BlockSize, 0);
+                    break;
+                case 4:
+                    al_draw_bitmap(bitmap_terrain_path01, x*BlockSize, y*BlockSize, 0);
+                    break;
+                default:
+                    //#include "collisions.h"
+                    //al_draw_filled_rectangle(x*BlockSize, y*BlockSize, x*BlockSize+BlockSize, y *BlockSize+BlockSize, rgbBlack);
+                    break;
+                }
         }
     }
 }
