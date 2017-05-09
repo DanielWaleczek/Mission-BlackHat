@@ -108,6 +108,8 @@ ALLEGRO_BITMAP *bitmap_terrain_water01;
 ALLEGRO_BITMAP *bitmap_terrain_lava[45];
 ALLEGRO_BITMAP *bitmap_terrain_lavaland;
 
+ALLEGRO_BITMAP *bitmap_mainmenu_exit;
+
 ALLEGRO_BITMAP *bitmap_icon_ammo01;
 ALLEGRO_BITMAP *bitmap_icon_weapon01;
 //SPRITES

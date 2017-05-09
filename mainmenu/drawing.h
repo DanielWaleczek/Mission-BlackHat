@@ -10,5 +10,7 @@ al_draw_text(font_courier_new32, rgbRed, ScreenWidth/2, 20, ALLEGRO_ALIGN_CENTER
 al_draw_elliptical_arc(100, 100, 332, 332, 32, -322, rgbWhite, 5);
 al_draw_elliptical_arc(100, 100, 332, 332, 32, -322, rgbSilver, 4);
 
+al_draw_bitmap(bitmap_mainmenu_exit, ScreenWidth-al_get_bitmap_width(bitmap_mainmenu_exit)-8, ScreenHeight-al_get_bitmap_height(bitmap_mainmenu_exit)-8, 0);
+
 
 al_flip_display();

@@ -75,4 +75,9 @@ bitmap_terrain_lavaland = al_load_bitmap("data/terrain/lavaland.png");
 if(!bitmap_terrain_lavaland)
     ExitGame("Failed to load \"data/terrain/lavaland.png\"");
 
+if(DEBUG) cout<<"\n  Loading \"data/textures/mainmenu/exit.png\"";
+bitmap_mainmenu_exit = al_load_bitmap("data/textures/mainmenu/exit.png");
+if(!bitmap_mainmenu_exit)
+    ExitGame("Failed to load \"data/textures/mainmenu/exit.png\"");
+
 #endif // BITMAPS_H_INCLUDED

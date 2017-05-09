@@ -2,6 +2,7 @@
 #define MAINMENU_H_INCLUDED
 //MainMenu module
 
+
 void CreateMainMenuObj(MenuObj *TempObj)
 {
     //!New Game button
@@ -18,6 +19,7 @@ void CreateMainMenuObj(MenuObj *TempObj)
 
 int MainMenu()
 {
+    al_rest(0.2);
     bool draw=1, done=0;
     short int activeid=0;
 
@@ -32,7 +34,12 @@ int MainMenu()
                 if(event.keyboard.keycode==ALLEGRO_KEY_ESCAPE)
                     ExitGame();
                 else if(event.keyboard.keycode==ALLEGRO_KEY_ENTER)
-                    GameLoop();
+                {
+                    if(activeid==0)
+                        GameLoop();
+                    else if(activeid==4)
+                        ExitGame();
+                }
                 else if(event.keyboard.keycode==ALLEGRO_KEY_DOWN)
                     activeid++;
                 else if(event.keyboard.keycode==ALLEGRO_KEY_UP)
@@ -43,6 +50,41 @@ int MainMenu()
                 activeid=0;
             else if(activeid>4)
                 activeid=4;
+
+            Button_NewGame.active=0;
+            Button_LoadGame.active=0;
+            Button_Options.active=0;
+            Button_Credits.active=0;
+            Button_ExitGame.active=0;
+
+            short int mousex=event.mouse.x; short int mousey=event.mouse.y;
+
+//            if(mousex>Button_NewGame.x1 && mousex<Button_NewGame.x2 && mousey>Button_NewGame.y1 && mousey<Button_NewGame.y2)
+//                activeid=0;
+//            else if(mousex>Button_LoadGame.x1 && mousex<Button_LoadGame.x2 && mousey>Button_LoadGame.y1 && mousey<Button_LoadGame.y2)
+//                activeid=1;
+//            else if(mousex>Button_Options.x1 && mousex<Button_Options.x2 && mousey>Button_Options.y1 && mousey<Button_Options.y2)
+//                activeid=2;
+//            else if(mousex>Button_Credits.x1 && mousex<Button_Credits.x2 && mousey>Button_Credits.y1 && mousey<Button_Credits.y2)
+//                activeid=3;
+//            else if(mousex>Button_ExitGame.x1 && mousex<Button_ExitGame.x2 && mousey>Button_ExitGame.y1 && mousey<Button_ExitGame.y2)
+//                activeid=4;
+
+
+            if(activeid==0)
+                Button_NewGame.active=true;
+            else if(activeid==1)
+                Button_LoadGame.active=true;
+            else if(activeid==2)
+                Button_Options.active=true;
+            else if(activeid==3)
+                Button_Credits.active=true;
+            else if(activeid==4)
+                Button_ExitGame.active=true;
+
+
+
+
 
             draw=1;
 
